@@ -5,7 +5,7 @@ export default function EditProducts() {
   return (
     <div className="container my-3">
       <h2>Edit the rank or product here</h2>
-      <form className="row g-3">
+      <form className="row my-3 g-3">
         <div className="col-md-4">
           <label htmlFor="validationCustom02" className="form-label">
             Rank

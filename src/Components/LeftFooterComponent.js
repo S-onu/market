@@ -109,9 +109,9 @@ export default function LeftFooterComponent() {
         </button>
       </div>
       <div className="d-grid my-3 gap-2">
-        <a href="#" className="btn btn-primary" type="button">
+        <Link to="/edit" className="btn btn-primary" type="button">
           Edit
-        </a>
+        </Link>
       </div>
     </div>
   );
