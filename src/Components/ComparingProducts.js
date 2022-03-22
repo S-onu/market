@@ -1,8 +1,13 @@
 import React from "react";
 import ComparingImages from "./ComparingImages";
+import ComparingTwoProductsImformations from "./ComparingTwoProductsImformations";
 
 export default function ComparingProducts() {
   return (
+    <>
+    <div className="container  my-3 text-center">
+      <h1>Design</h1>
+    </div>
     <div className="container comparingTwoProducts">
       <div className="inLeft bg-dark my-3">
         <ComparingImages
@@ -21,5 +26,14 @@ export default function ComparingProducts() {
         />
       </div>
     </div>
+    <div className="container comparingProductDetails my-4">
+      <div className="leftProductInfo bg-dark">
+        <ComparingTwoProductsImformations/>
+      </div>
+      <div className="rightProductInfo bg-dark">
+        <ComparingTwoProductsImformations/>
+      </div>
+    </div>
+    </>
   );
 }

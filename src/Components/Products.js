@@ -3,7 +3,7 @@ import ProductPhoto from "./ProductPhoto";
 
 export default function Products() {
   return (
-    <div className="card bg-dark text-light my-1">
+    <div className="card bg-dark text-light my-2">
       <div className="card-body">
         <h4 className="card-title">1. MACBOOK AIR</h4>
         <ProductPhoto

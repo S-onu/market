@@ -48,6 +48,11 @@ body {
   grid-template-columns: 10rem 1rem 28rem;
   column-gap: 1rem;
 }
+.specs2 {
+  display: grid;
+  grid-template-columns: 6rem 1rem 22rem;
+  column-gap: 1rem;
+}
 .content {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -88,20 +93,29 @@ body {
   width: 14rem;
   height: 13rem;
 }
-.inRight{
+.inRight {
   height: 100%;
   max-height: 60vh;
   width: 50vw;
   /* clip-path: polygon(51% 0, 26% 100%, 100% 100%, 100% 0); */
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
 }
-.inLeft{
+.inLeft {
   height: 100%;
   max-height: 60vh;
   width: 50vw;
   /* clip-path: polygon(49% 0, 24% 100%, 0 100%, 0 0); */
   clip-path: polygon(100% 0, 80% 100%, 0 100%, 0 0);
 }
-.comparingTwoProducts{
+.comparingTwoProducts {
   display: flex;
+}
+.comparingProductDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+.leftProductInfo,
+.rightProductInfo {
+  height: 100%;
 }
