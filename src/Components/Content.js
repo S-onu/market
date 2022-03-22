@@ -6,6 +6,9 @@ export default function Content() {
     <div className="container">
       <div className="my-3">
         <Products/>
+        <Products/>
+        <Products/>
+        <Products/>
       </div>
     </div>
   );

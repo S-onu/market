@@ -7,6 +7,7 @@ import ContentHeader from "./Components/ContentHeader";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import EditProducts from "./Components/EditProducts";
 import ContactUsPage from "./Components/ContactUsPage";
+import ComparingProducts from "./Components/ComparingProducts";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Switch>
           <Route path="/contactUs">
             <ContactUsPage />
+          </Route>
+          <Route path="/compare">
+            <ComparingProducts />
           </Route>
           <div className="content">
             <div className="leftFooter mx-1 bg-dark my-3">

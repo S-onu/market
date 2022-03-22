@@ -36,45 +36,72 @@
     transform: rotate(360deg);
   }
 }
-.row{
+.row {
   display: flex;
 }
-body{
+body {
   background-color: #111b21;
   color: #fff;
 }
-.specs{
+.specs {
   display: grid;
   grid-template-columns: 10rem 1rem 28rem;
   column-gap: 1rem;
 }
-.content{
+.content {
   display: grid;
   grid-template-columns: 1fr 4fr;
   column-gap: 1rem;
 }
-.leftFooter{
+.leftFooter {
   height: 100vh;
   position: sticky;
   top: 0;
 }
-.badge{
+.badge {
   cursor: pointer;
 }
-.buying-guide-card li{
+.buying-guide-card li {
   font-size: 0.8rem;
 }
-.price-range{
+.price-range {
   height: 4rem;
   overflow-y: scroll;
 }
-#rankInputId{
+#rankInputId {
   width: 6rem;
 }
-.contactUsPageLayout{
+.contactUsPageLayout {
   display: grid;
-  grid-template-columns: 2fr 4fr;  
+  grid-template-columns: 2fr 4fr;
+  column-gap: 4rem;
 }
-.bgColor{
+.bgColor {
   background-color: #eeeeee;
+}
+.rightSideBox div input,
+.rightSideBox div textarea {
+  background-color: #25343d;
+}
+.contactPageLogo {
+  border-radius: 7rem;
+  width: 14rem;
+  height: 13rem;
+}
+.inRight{
+  height: 100%;
+  max-height: 60vh;
+  width: 50vw;
+  /* clip-path: polygon(51% 0, 26% 100%, 100% 100%, 100% 0); */
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
+}
+.inLeft{
+  height: 100%;
+  max-height: 60vh;
+  width: 50vw;
+  /* clip-path: polygon(49% 0, 24% 100%, 0 100%, 0 0); */
+  clip-path: polygon(100% 0, 80% 100%, 0 100%, 0 0);
+}
+.comparingTwoProducts{
+  display: flex;
 }

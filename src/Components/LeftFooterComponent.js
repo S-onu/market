@@ -104,9 +104,9 @@ export default function LeftFooterComponent() {
       <hr />
 
       <div className="d-grid gap-2">
-        <button className="btn btn-outline-info" type="button">
+        <Link className="btn btn-outline-info" to="/compare" type="button">
           Compare<span className="badge mx-3 bg-primary rounded-pill">0</span>
-        </button>
+        </Link>
       </div>
       <div className="d-grid my-3 gap-2">
         <Link to="/edit" className="btn btn-primary" type="button">
