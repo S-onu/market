@@ -28,43 +28,11 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Link
+                About
               </a>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled">Disabled</a>
+              <Link className="nav-link" to="/contactUs">Contact us</Link>
             </li>
           </ul>
           <form className="d-flex">
@@ -77,6 +45,14 @@ export default function Navbar() {
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>
+            {/* <div className="container mx-2">
+              <button className="btn mx-1 btn-outline-primary" type="submit">
+                Login
+              </button>
+              <button className="btn btn-primary" type="submit">
+                Sign-up
+              </button>
+            </div> */}
           </form>
         </div>
       </div>

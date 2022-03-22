@@ -12,7 +12,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control bgColor"
             id="rankInputId"
             required
           />
@@ -24,7 +24,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationServer03"
             aria-describedby="validationServer03Feedback"
             required
@@ -39,7 +39,7 @@ export default function EditProducts() {
           </label>
           <input
             type="email"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
@@ -65,7 +65,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationServer03"
             aria-describedby="validationServer03Feedback"
             required
@@ -82,7 +82,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationCustom01"
             required
           />
@@ -94,7 +94,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationCustom02"
             required
           />
@@ -106,7 +106,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationCustom02"
             required
           />
@@ -118,7 +118,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationCustom02"
             required
           />
@@ -130,7 +130,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationCustom02"
             required
           />
@@ -142,7 +142,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid"
+            className="form-control is-invalid bgColor"
             id="validationCustom02"
             required
           />

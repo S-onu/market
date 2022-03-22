@@ -71,3 +71,10 @@ body{
 #rankInputId{
   width: 6rem;
 }
+.contactUsPageLayout{
+  display: grid;
+  grid-template-columns: 2fr 4fr;  
+}
+.bgColor{
+  background-color: #eeeeee;
+}
