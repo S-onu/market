@@ -31,8 +31,6 @@ function App() {
                   <Content />
                 </Route>
               </Switch>
-              {/* <ContentHeader /> */}
-              {/* <Content /> */}
             </div>
           </div>
         </Switch>
