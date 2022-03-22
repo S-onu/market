@@ -50,7 +50,7 @@ body{
 }
 .content{
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   column-gap: 1rem;
 }
 .leftFooter{
@@ -60,4 +60,14 @@ body{
 }
 .badge{
   cursor: pointer;
+}
+.buying-guide-card li{
+  font-size: 0.8rem;
+}
+.price-range{
+  height: 4rem;
+  overflow-y: scroll;
+}
+#rankInputId{
+  width: 6rem;
 }

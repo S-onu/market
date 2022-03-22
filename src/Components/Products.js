@@ -3,19 +3,18 @@ import ProductPhoto from "./ProductPhoto";
 
 export default function Products() {
   return (
-    <div class="card bg-dark text-light">
-      <div class="card-header">Featured</div>
-      <div class="card-body">
-        <h4 class="card-title">1. MACBOOK AIR</h4>
+    <div className="card bg-dark text-light my-1">
+      <div className="card-body">
+        <h4 className="card-title">1. MACBOOK AIR</h4>
         <ProductPhoto />
 
         <h4 className="text-light">₹92,900.00 - ₹1,17,900.00</h4>
 
-        <div class="accordion my-3 accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item bg-dark">
-            <h2 class="accordion-header" id="flush-headingOne">
+        <div className="accordion my-3 accordion-flush" id="accordionFlushExample">
+          <div className="accordion-item bg-dark">
+            <h2 className="accordion-header" id="flush-headingOne">
               <button
-                class="accordion-button bg-dark text-light collapsed"
+                className="accordion-button bg-dark text-light collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
@@ -27,14 +26,14 @@ export default function Products() {
             </h2>
             <div
               id="flush-collapseOne"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <ul class="nav nav-pills m-3 mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
+              <ul className="nav nav-pills m-3 mb-3" id="pills-tab" role="tablist">
+                <li className="nav-item" role="presentation">
                   <button
-                    class="nav-link active"
+                    className="nav-link active"
                     id="pills-home-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-home"
@@ -46,9 +45,9 @@ export default function Products() {
                     Specefications
                   </button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li className="nav-item" role="presentation">
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="pills-profile-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-profile"
@@ -61,9 +60,9 @@ export default function Products() {
                   </button>
                 </li>
               </ul>
-              <div class="tab-content" id="pills-tabContent">
+              <div className="tab-content" id="pills-tabContent">
                 <div
-                  class="tab-pane mx-3 fade show active"
+                  className="tab-pane mx-3 fade show active"
                   id="pills-home"
                   role="tabpanel"
                   aria-labelledby="pills-home-tab"
@@ -101,14 +100,14 @@ export default function Products() {
                       <div>720p FaceTime HD camera</div>
                     </div>
                   </div>
-                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-outline-light me-md-2" type="button">
+                  <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button className="btn btn-outline-light me-md-2" type="button">
                       Add to compare
                     </button>
                   </div>
                 </div>
                 <div
-                  class="tab-pane mx-3 fade"
+                  className="tab-pane mx-3 fade"
                   id="pills-profile"
                   role="tabpanel"
                   aria-labelledby="pills-profile-tab"
@@ -119,7 +118,7 @@ export default function Products() {
             </div>
           </div>
         </div>
-        <a href="#" class="btn btn-outline-success">
+        <a href="#" className="btn btn-outline-success">
           Buy now
         </a>
       </div>
