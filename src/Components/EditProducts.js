@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProductPhoto from "./ProductPhoto";
+import Products from "./Products";
 
 export default function EditProducts() {
   const handleOnBlur = () => {
@@ -16,9 +18,14 @@ export default function EditProducts() {
       });
     }
   };
+  const handleSubmitFormForEditBtn = ()=>{
+    let contentId = document.getElementById("contentId")
+    console.log(contentId)
+  }
   return (
+    <>
     <div onMouseMove={handleOnBlur} className="container my-3">
-      <h2>Edit the rank or product here</h2>
+      <h2>Edit the rank or product here</h2><hr />
       <form className="row my-3 g-3">
         <div className="col-md-4">
           <label htmlFor="validationCustom02" className="form-label">
@@ -181,12 +188,12 @@ export default function EditProducts() {
             </div>
           </div>
         </div>
-        <div className="col-12">
-          <button className="btn btn-primary" type="submit">
-            Submit form
-          </button>
-        </div>
       </form>
-    </div>
+        <div className="col-12">
+          <Link className="btn btn-primary" onClick={handleSubmitFormForEditBtn} to="/">
+            Submit form
+          </Link>
+        </div>
+    </div></>
   );
 }

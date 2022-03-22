@@ -5,7 +5,7 @@ import ComparingTwoProductsImformations from "./ComparingTwoProductsImformations
 export default function ComparingProducts() {
   return (
     <>
-    <div className="container  my-3 text-center">
+    <div className="container my-3 text-center">
       <h1>Design</h1>
     </div>
     <div className="container comparingTwoProducts">

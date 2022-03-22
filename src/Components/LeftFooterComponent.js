@@ -87,6 +87,7 @@ export default function LeftFooterComponent() {
       </div>
       <hr />
       <div className="my-3 container">
+        <h6>Buying guide</h6>
         <div className="card buying-guide-card">
           <ul className="list-group list-group-flush">
             <li className="list-group-item bg-dark text-light">
