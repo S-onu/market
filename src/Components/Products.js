@@ -6,11 +6,18 @@ export default function Products() {
     <div className="card bg-dark text-light my-1">
       <div className="card-body">
         <h4 className="card-title">1. MACBOOK AIR</h4>
-        <ProductPhoto />
+        <ProductPhoto
+          imageUrl1="/Images/macBookAir-removebg-preview.png"
+          imageUrl2="/Images/macBookAir2-removebg-preview.png"
+          imageUrl3="/Images/macBookAir3-removebg-preview.png"
+        />
 
         <h4 className="text-light">₹92,900.00 - ₹1,17,900.00</h4>
 
-        <div className="accordion my-3 accordion-flush" id="accordionFlushExample">
+        <div
+          className="accordion my-3 accordion-flush"
+          id="accordionFlushExample"
+        >
           <div className="accordion-item bg-dark">
             <h2 className="accordion-header" id="flush-headingOne">
               <button
@@ -30,7 +37,11 @@ export default function Products() {
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <ul className="nav nav-pills m-3 mb-3" id="pills-tab" role="tablist">
+              <ul
+                className="nav nav-pills m-3 mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
                 <li className="nav-item" role="presentation">
                   <button
                     className="nav-link active"
@@ -101,7 +112,10 @@ export default function Products() {
                     </div>
                   </div>
                   <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button className="btn btn-outline-light me-md-2" type="button">
+                    <button
+                      className="btn btn-outline-light me-md-2"
+                      type="button"
+                    >
                       Add to compare
                     </button>
                   </div>

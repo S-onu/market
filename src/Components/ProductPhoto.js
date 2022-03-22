@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProductPhoto() {
+export default function ProductPhoto(props) {
   return (
     <div
       id="carouselExampleInterval"
@@ -11,7 +11,7 @@ export default function ProductPhoto() {
         <div className="carousel-item active" data-bs-interval="3200">
           <center>
             <img
-              src="/Images/macBookAir-removebg-preview.png"
+              src={props.imageUrl1}
               className="d-block w-50"
               alt="..."
             />
@@ -20,7 +20,7 @@ export default function ProductPhoto() {
         <div className="carousel-item" data-bs-interval="3200">
           <center>
             <img
-              src="/Images/macBookAir2-removebg-preview.png"
+              src={props.imageUrl2}
               className="d-block w-50"
               alt="..."
             />
@@ -29,7 +29,7 @@ export default function ProductPhoto() {
         <div className="carousel-item" data-bs-interval="3200">
           <center>
             <img
-              src="/Images/macBookAir3-removebg-preview.png"
+              src={props.imageUrl3}
               className="d-block w-50"
               alt="..."
             />

@@ -54,7 +54,11 @@ export default function EditProducts() {
             alt="..."
           ></img>
         </center> */}
-        <ProductPhoto/>
+        <ProductPhoto
+          imageUrl1="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2YNPbIkb2o-v4Vg6CJx4bDhAEFmwIfSGCw&usqp=CAU"
+          imageUrl2="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogQ3P3ojYSeiQf-5SlBmN0VxGePAsk8WpmQ&usqp=CAU"
+          imageUrl3="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRyzBd6jnUbcZD5DbMyPR3qJOAjel21xiEw&usqp=CAU"
+        />
         <div className="col-md-6">
           <label htmlFor="validationServer03" className="form-label">
             Price
