@@ -2,8 +2,22 @@ import React from "react";
 import ProductPhoto from "./ProductPhoto";
 
 export default function EditProducts() {
+  const handleOnBlur = () => {
+    let allInputsInTheEditProducts = document.querySelectorAll(".bgColor");
+    for (let i = 0; i < allInputsInTheEditProducts.length; i++) {
+      allInputsInTheEditProducts[i].addEventListener("blur", () => {
+        if (allInputsInTheEditProducts[i].value == "") {
+          allInputsInTheEditProducts[i].className =
+            "form-control is-invalid bgColor";
+        } else {
+          allInputsInTheEditProducts[i].className =
+            "form-control is-valid bgColor";
+        }
+      });
+    }
+  };
   return (
-    <div className="container my-3">
+    <div onMouseMove={handleOnBlur} className="container my-3">
       <h2>Edit the rank or product here</h2>
       <form className="row my-3 g-3">
         <div className="col-md-4">
@@ -24,7 +38,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationServer03"
             aria-describedby="validationServer03Feedback"
             required
@@ -39,7 +53,7 @@ export default function EditProducts() {
           </label>
           <input
             type="email"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
@@ -65,7 +79,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationServer03"
             aria-describedby="validationServer03Feedback"
             required
@@ -82,7 +96,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationCustom01"
             required
           />
@@ -94,7 +108,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationCustom02"
             required
           />
@@ -106,7 +120,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationCustom02"
             required
           />
@@ -118,7 +132,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationCustom02"
             required
           />
@@ -130,7 +144,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationCustom02"
             required
           />
@@ -142,7 +156,7 @@ export default function EditProducts() {
           </label>
           <input
             type="text"
-            className="form-control is-invalid bgColor"
+            className="form-control bgColor"
             id="validationCustom02"
             required
           />

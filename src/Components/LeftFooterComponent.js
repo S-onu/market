@@ -105,7 +105,7 @@ export default function LeftFooterComponent() {
 
       <div className="d-grid gap-2">
         <button className="btn btn-outline-info" type="button">
-          Compare<span className="badge mx-3 bg-primary rounded-pill">3</span>
+          Compare<span className="badge mx-3 bg-primary rounded-pill">0</span>
         </button>
       </div>
       <div className="d-grid my-3 gap-2">
