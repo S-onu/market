@@ -27,10 +27,10 @@ export default function ComparingProducts() {
       </div>
     </div>
     <div className="container comparingProductDetails my-4">
-      <div className="leftProductInfo bg-dark">
+      <div className="leftProductInfo text-light bg-dark">
         <ComparingTwoProductsImformations/>
       </div>
-      <div className="rightProductInfo bg-dark">
+      <div className="rightProductInfo text-light bg-dark">
         <ComparingTwoProductsImformations/>
       </div>
     </div>

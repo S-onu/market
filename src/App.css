@@ -39,9 +39,10 @@
 .row {
   display: flex;
 }
-body {
+#root{
   background-color: #111b21;
   color: #fff;
+  padding-bottom: 1rem;
 }
 .specs {
   display: grid;
