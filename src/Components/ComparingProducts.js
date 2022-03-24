@@ -1,5 +1,4 @@
 import React from "react";
-import ComparingImages from "./ComparingImages";
 import ComparingTwoProductsImformations from "./ComparingTwoProductsImformations";
 import ProductPhoto from "./ProductPhoto";
 
