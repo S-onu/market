@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProductPhoto from "./ProductPhoto";
-import Products from "./Products";
 
 export default function EditProducts() {
   const handleOnBlur = () => {
@@ -81,17 +80,11 @@ export default function EditProducts() {
               Please provide at least one image url
             </div>
           </div>
-          {/* <center>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogQ3P3ojYSeiQf-5SlBmN0VxGePAsk8WpmQ&usqp=CAU"
-            className="card-img-top d-block w-50"
-            alt="..."
-          ></img>
-        </center> */}
           <ProductPhoto
             imageUrl1="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2YNPbIkb2o-v4Vg6CJx4bDhAEFmwIfSGCw&usqp=CAU"
             imageUrl2="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogQ3P3ojYSeiQf-5SlBmN0VxGePAsk8WpmQ&usqp=CAU"
             imageUrl3="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRyzBd6jnUbcZD5DbMyPR3qJOAjel21xiEw&usqp=CAU"
+            width="50"
           />
           <div className="col-md-6">
             <label htmlFor="validationServer03" className="form-label">

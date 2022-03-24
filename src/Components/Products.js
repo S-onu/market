@@ -10,6 +10,7 @@ export default function Products() {
           imageUrl1="/Images/macBookAir-removebg-preview.png"
           imageUrl2="/Images/macBookAir2-removebg-preview.png"
           imageUrl3="/Images/macBookAir3-removebg-preview.png"
+          width="50"
         />
 
         <h4 className="text-light">₹92,900.00 - ₹1,17,900.00</h4>
