@@ -195,9 +195,15 @@ export default function EditProducts() {
             </div>
           </div>
         </form>
-        <div className="col-12">
+        <div style={{display:"flex", justifyContent:"space-between"}}>
           <Link
-            className="btn btn-primary"
+            className="btn btn-outline-secondary"
+            to="/productsite"
+          >
+            Back
+          </Link>
+          <Link
+            className="btn mx-5 btn-primary"
             onClick={handleSubmitFormForEditBtn}
             to="/productsite"
           >

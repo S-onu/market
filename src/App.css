@@ -120,4 +120,11 @@
 .leftProductInfo,
 .rightProductInfo {
   height: 100%;
+  padding: -6px;
+}
+.cardInLeftFooter{
+  background-color: #212529;
+}
+.cardInLeftFooter:hover{
+  background-color: #393f45;
 }

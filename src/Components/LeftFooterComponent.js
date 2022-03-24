@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Accordion } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 export default function LeftFooterComponent() {
   return (
@@ -47,7 +49,7 @@ export default function LeftFooterComponent() {
           step="0.5"
           id="customRange3"
         />
-        
+
         <div className="d-grid gap-2 d-md-flex my-2 justify-content-md-end">
           <button className="btn btn-sm btn-success me-md-2" type="button">
             Apply
@@ -86,21 +88,76 @@ export default function LeftFooterComponent() {
         </div>
       </div>
       <hr />
-      <div className="my-3 container">
-        <h6>Buying guide</h6>
-        <div className="card buying-guide-card">
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item bg-dark text-light">
-              &#9734; 12.5 to 14-inch screen
-            </li>
-            <li className="list-group-item bg-dark text-light">
-              &#9734; SSD Storage instead of a hard drive.
-            </li>
-            <li className="list-group-item bg-dark text-light">
-              &#9734; 9+ hours of battery life
-            </li>
-          </ul>
+      <div className="container my-3">
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+          <div className="accordion-item bg-dark">
+            <h2 className="accordion-header bg-dark" id="flush-headingOne">
+              <button
+                type="button"
+                className="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+                style={{ backgroundColor: "#111b21", color: "#fff" }}
+              >
+                Buying for
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              className="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body bg-dark">
+                <div
+                  style={{
+                    border: "1px solid white",
+                    cursor: "pointer",
+                  }}
+                  className="card my-1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                  // className="card my-1"
+                >
+                  <div className="card-body cardInLeftFooter">Gaming</div>
+                </div>
+                <div
+                  style={{
+                    border: "1px solid white",
+                    cursor: "pointer",
+                  }}
+                  className="card my-1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                  // className="card my-1"
+                >
+                  <div className="card-body cardInLeftFooter">Editing</div>
+                </div>
+                <div
+                  style={{
+                    border: "1px solid white",
+                    cursor: "pointer",
+                  }}
+                  className="card my-1"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                  // className="card my-1"
+                >
+                  <div className="card-body cardInLeftFooter">Daily use</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
       </div>
       <hr />
 
