@@ -206,7 +206,7 @@ export default function EditProducts() {
           <Link
             className="btn btn-primary"
             onClick={handleSubmitFormForEditBtn}
-            to="/"
+            to="/productsite"
           >
             Submit form
           </Link>

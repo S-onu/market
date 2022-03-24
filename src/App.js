@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import HomePage from "./Components/HomePage";
 import Content from "./Components/Content";
 import LeftFooterComponent from "./Components/LeftFooterComponent";
 import ContentHeader from "./Components/ContentHeader";
@@ -8,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import EditProducts from "./Components/EditProducts";
 import ContactUsPage from "./Components/ContactUsPage";
 import ComparingProducts from "./Components/ComparingProducts";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,6 +19,11 @@ function App() {
         <Switch>
           <Route path="/contactUs">
             <ContactUsPage />
+          </Route>
+          <Route exact path="/">
+            <HomePage />
+            <hr className="my-5" />
+            <Footer />
           </Route>
           <Route path="/compare">
             <ComparingProducts />
@@ -30,13 +37,15 @@ function App() {
                 <Route path="/edit">
                   <EditProducts />
                 </Route>
-                <Route path="/">
+                <Route path="/productsite">
                   <ContentHeader />
                   <Content />
+            <hr className="my-5" />
+            <Footer />
                 </Route>
               </Switch>
-            </div>
           </div>
+            </div>
         </Switch>
       </Router>
     </>
