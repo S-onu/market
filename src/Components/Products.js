@@ -1,19 +1,28 @@
 import React from "react";
 import ProductPhoto from "./ProductPhoto";
 
-export default function Products() {
+export default function Products(props) {
+  let inputValues = localStorage.getItem("inputValues");
+  let inputEditProductObj;
+  if (inputValues == null) {
+    inputEditProductObj = [];
+  } else {
+    inputEditProductObj = JSON.parse(inputValues);
+  }
   return (
     <div className="card bg-dark text-light my-2">
       <div className="card-body">
-        <h4 className="card-title">1. MACBOOK AIR</h4>
+        <h4 className="card-title">
+          {inputEditProductObj[0][props.NoOfProducts][0]}. {inputEditProductObj[0][props.NoOfProducts][1]}
+        </h4>
         <ProductPhoto
-          imageUrl1="/Images/macBookAir-removebg-preview.png"
-          imageUrl2="/Images/macBookAir2-removebg-preview.png"
-          imageUrl3="/Images/macBookAir3-removebg-preview.png"
+          imageUrl1={inputEditProductObj[0][props.NoOfProducts][2]}
+          imageUrl2={inputEditProductObj[0][props.NoOfProducts][3]}
+          imageUrl3={inputEditProductObj[0][props.NoOfProducts][4]}
           width="50"
         />
 
-        <h4 className="text-light">₹92,900.00 - ₹1,17,900.00</h4>
+        <h4 className="text-light">₹ {inputEditProductObj[0][props.NoOfProducts][5]}</h4>
 
         <div
           className="accordion my-3 accordion-flush"
@@ -99,17 +108,13 @@ export default function Products() {
                       <div> : </div>
                     </div>
                     <div className="col3">
-                      <div>MacBook Air</div>
-                      <div>33.74 cm / 13.3-inch (diagonal)</div>
-                      <div>Apple M1 chip</div>
-                      <div>
-                        Up to 15 hours wireless web, 30W USB-C Power Adapter
-                      </div>
-                      <div>8GB, Configurable to: 16GB</div>
-                      <div>
-                        256GB, 256GB SSD, Configurable to: 512GB, 1TB or 2TB
-                      </div>
-                      <div>720p FaceTime HD camera</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][1]}</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][6]}</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][7]}</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][8]}</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][9]}</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][10]}</div>
+                      <div>{inputEditProductObj[0][props.NoOfProducts][11]}</div>
                     </div>
                   </div>
                   <div className="d-grid gap-2 d-md-flex justify-content-md-end">

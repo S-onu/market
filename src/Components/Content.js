@@ -9,14 +9,16 @@ export default function Content() {
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
-  console.log(inputEditProductObj);
+  let index = -1;
+  // Remember that local storage should not be cleared
   return (
     <>
       <div className="container">
         <div id="contentId" className="my-3">
-          <Products />
-          {inputEditProductObj.map(() => {
-            return <Products />;
+          {/* <Products /> */}
+          {inputEditProductObj[0].map(() => {
+            index++;
+            return <Products NoOfProducts={index} />;
           })}
         </div>
       </div>

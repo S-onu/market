@@ -6,31 +6,42 @@ export default function EditProducts() {
   const handleOnBlur = () => {
     let allInputsInTheEditProducts = document.querySelectorAll(".bgColor");
     for (let i = 0; i < allInputsInTheEditProducts.length; i++) {
-      allInputsInTheEditProducts[i].addEventListener("blur", () => {
-        if (allInputsInTheEditProducts[i].value == "") {
-          allInputsInTheEditProducts[i].className =
-            "form-control is-invalid bgColor";
-        } else {
-          allInputsInTheEditProducts[i].className =
-            "form-control is-valid bgColor";
-        }
-      });
+      if (i == 3 || i == 4) {
+        continue;
+      } else {
+        allInputsInTheEditProducts[i].addEventListener("blur", () => {
+          if (allInputsInTheEditProducts[i].value == "") {
+            allInputsInTheEditProducts[i].className =
+              "form-control is-invalid bgColor";
+          } else {
+            allInputsInTheEditProducts[i].className =
+              "form-control is-valid bgColor";
+          }
+        });
+      }
     }
   };
   const handleSubmitFormForEditBtn = () => {
-    let allInputsInTheEditProducts = document.querySelectorAll(".bgColor1");
+    let allInputsInTheEditProducts = document.querySelectorAll(".bgColor");
     let inputEditProduct = [];
+    let laptop = []
+    let mobile = []
+    // let typeinputEditProduct = [];
+    // inputEditProductObj = [laptop, mobile]
     for (let i = 0; i < allInputsInTheEditProducts.length; i++) {
       inputEditProduct.push(allInputsInTheEditProducts[i].value);
     }
     let inputValues = localStorage.getItem("inputValues");
     let inputEditProductObj;
     if (inputValues == null) {
-      inputEditProductObj = [];
+      inputEditProductObj = [laptop, mobile];
     } else {
       inputEditProductObj = JSON.parse(inputValues);
     }
-    inputEditProductObj.push(inputEditProduct);
+    // typeinputEditProduct.push(inputEditProduct);
+    // inputEditProductObj.push(typeinputEditProduct);
+    // inputEditProductObj=[typeinputEditProduct];
+    inputEditProductObj[0].push(inputEditProduct)
     localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
   };
   return (
@@ -45,7 +56,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="rankInputId"
               required
             />
@@ -57,7 +68,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationServer03"
               aria-describedby="validationServer03Feedback"
               required
@@ -73,27 +84,30 @@ export default function EditProducts() {
             <input
               type="email"
               placeholder="URL 1"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
+            <div
+              id="validationServer03Feedback"
+              className="invalid-feedback my-1"
+            >
+              Please provide at least one image url
+            </div>
             <input
               type="email"
               placeholder="URL 2"
-              className="form-control my-2 bgColor1"
+              className="form-control my-2 bgColor"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
             <input
               type="email"
               placeholder="URL 3"
-              className="form-control my-2 bgColor1"
+              className="form-control my-2 bgColor"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
-            <div id="validationServer03Feedback" className="invalid-feedback">
-              Please provide at least one image url
-            </div>
           </div>
           <ProductPhoto
             imageUrl1="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe2YNPbIkb2o-v4Vg6CJx4bDhAEFmwIfSGCw&usqp=CAU"
@@ -107,7 +121,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationServer03"
               aria-describedby="validationServer03Feedback"
               required
@@ -124,7 +138,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationCustom01"
               required
             />
@@ -136,7 +150,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationCustom02"
               required
             />
@@ -148,7 +162,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationCustom02"
               required
             />
@@ -160,7 +174,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationCustom02"
               required
             />
@@ -172,7 +186,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationCustom02"
               required
             />
@@ -184,7 +198,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor bgColor1"
+              className="form-control bgColor"
               id="validationCustom02"
               required
             />
@@ -210,11 +224,8 @@ export default function EditProducts() {
             </div>
           </div>
         </form>
-        <div style={{display:"flex", justifyContent:"space-between"}}>
-          <Link
-            className="btn btn-outline-secondary"
-            to="/productsite"
-          >
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <Link className="btn btn-outline-secondary" to="/productsite">
             Back
           </Link>
           <Link

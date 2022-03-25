@@ -10,8 +10,20 @@ import EditProducts from "./Components/EditProducts";
 import ContactUsPage from "./Components/ContactUsPage";
 import ComparingProducts from "./Components/ComparingProducts";
 import Footer from "./Components/Footer";
+import { useState } from "react";
 
 function App() {
+  let inputValues = localStorage.getItem("inputValues");
+  let inputEditProductObj;
+  if (inputValues == null) {
+    inputEditProductObj = [];
+  } else {
+    inputEditProductObj = JSON.parse(inputValues);
+  }
+  const [showResults, setShowResults] = useState(inputEditProductObj[0]);
+  const handleOnCardClick1 = ()=>{
+    setShowResults(inputEditProductObj[0])
+  }
   return (
     <>
       <Router>
@@ -21,7 +33,7 @@ function App() {
             <ContactUsPage />
           </Route>
           <Route exact path="/">
-            <HomePage />
+            <HomePage goToProductSite={handleOnCardClick1}/>
             <hr className="my-5" />
             <Footer />
           </Route>
@@ -39,13 +51,13 @@ function App() {
                 </Route>
                 <Route path="/productsite">
                   <ContentHeader />
-                  <Content />
-            <hr className="my-5" />
-            <Footer />
+                  <Content/>
+                  <hr className="my-5" />
+                  <Footer />
                 </Route>
               </Switch>
-          </div>
             </div>
+          </div>
         </Switch>
       </Router>
     </>
