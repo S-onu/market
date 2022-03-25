@@ -1,12 +1,21 @@
 import React from "react";
 
-export default function ComparingTwoProductsImformations() {
+export default function ComparingTwoProductsImformations(props) {
+  let laptop = []
+  let mobile = []
+  let inputValues = localStorage.getItem("inputValues");
+    let inputEditProductObj;
+    if (inputValues == null) {
+      inputEditProductObj = [laptop, mobile];
+    } else {
+      inputEditProductObj = JSON.parse(inputValues);
+    }
   return (
       <>
       <div className="container my-3 specs2">
           <h4>Price</h4>
           <h4> : </h4>
-          <h4>₹92,900.00 - ₹1,17,900.00</h4>
+          <h4>₹ {inputEditProductObj[0][props.state][5]}</h4>
       </div><hr />
       <div className="container"><h6>Specifications :-</h6></div>
     <div className="container p-3 specs2">
@@ -17,7 +26,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>MacBook Air</div>
+        <div>{inputEditProductObj[0][props.state][1]}</div>
       </div>
       <div className="col1">
         <div>Display</div>
@@ -26,7 +35,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>33.74 cm / 13.3-inch (diagonal)</div>
+        <div>{inputEditProductObj[0][props.state][6]}</div>
       </div>
       <div className="col1">
         <div>Chip</div>
@@ -35,7 +44,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>Apple M1 chip</div>
+        <div>{inputEditProductObj[0][props.state][7]}</div>
       </div>
       <div className="col1">
         <div>Battery and Power</div>
@@ -44,7 +53,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>Up to 15 hours wireless web, 30W USB-C Power Adapter</div>
+        <div>{inputEditProductObj[0][props.state][8]}</div>
       </div>
       <div className="col1">
         <div>Memory</div>
@@ -53,7 +62,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>8GB, Configurable to: 16GB</div>
+        <div>{inputEditProductObj[0][props.state][9]}</div>
       </div>
       <div className="col1">
         <div>Storage</div>
@@ -62,7 +71,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>256GB, 256GB SSD, Configurable to: 512GB, 1TB or 2TB</div>
+        <div>{inputEditProductObj[0][props.state][10]}</div>
       </div>
       <div className="col1">
         <div>Camera</div>
@@ -71,7 +80,7 @@ export default function ComparingTwoProductsImformations() {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>720p FaceTime HD camera</div>
+        <div>{inputEditProductObj[0][props.state][11]}</div>
       </div>
     </div>
     <div className="container my-3">

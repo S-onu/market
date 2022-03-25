@@ -1,7 +1,7 @@
 import React from "react";
 import Products from "./Products";
 
-export default function Content() {
+export default function Content(props) {
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj;
   if (inputValues == null) {
@@ -18,7 +18,7 @@ export default function Content() {
           {/* <Products /> */}
           {inputEditProductObj[0].map(() => {
             index++;
-            return <Products NoOfProducts={index} />;
+            return <Products state={props.state} NoOfProducts={index} />;
           })}
         </div>
       </div>

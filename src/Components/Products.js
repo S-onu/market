@@ -121,6 +121,7 @@ export default function Products(props) {
                     <button
                       className="btn btn-outline-light me-md-2"
                       type="button"
+                      onClick={()=>{props.state(props.NoOfProducts)}}
                     >
                       Add to compare
                     </button>

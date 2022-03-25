@@ -11,6 +11,7 @@ import ContactUsPage from "./Components/ContactUsPage";
 import ComparingProducts from "./Components/ComparingProducts";
 import Footer from "./Components/Footer";
 import { useState } from "react";
+import Alerts from "./Components/Alerts";
 
 function App() {
   let inputValues = localStorage.getItem("inputValues");
@@ -21,24 +22,46 @@ function App() {
     inputEditProductObj = JSON.parse(inputValues);
   }
   const [showResults, setShowResults] = useState(inputEditProductObj[0]);
-  const handleOnCardClick1 = ()=>{
-    setShowResults(inputEditProductObj[0])
+  const [countNo, setCountNo] = useState(0);
+  const handleOnCardClick1 = () => {
+    setShowResults(inputEditProductObj[0]);
+  };
+  let goOn = 1;
+  let comeon = 0;
+  if (goOn % 2 == 0) {
+    comeon = countNo;
+  } else {
+    comeon = 0;
   }
+  goOn++;
+
+  // const [alert, setAlert] = useState(null);
+
+  // const showAlert = (message) => {
+  //   setAlert({
+  //     msg: message,
+  //   });
+  //   setTimeout(() => {
+  //     setAlert(null);
+  //   }, 1400);
+  // };
+
   return (
     <>
       <Router>
         <Navbar />
+        {/* <Alerts alert={alert}/> */}
         <Switch>
           <Route path="/contactUs">
             <ContactUsPage />
           </Route>
           <Route exact path="/">
-            <HomePage goToProductSite={handleOnCardClick1}/>
+            <HomePage goToProductSite={handleOnCardClick1} />
             <hr className="my-5" />
             <Footer />
           </Route>
           <Route path="/compare">
-            <ComparingProducts />
+            <ComparingProducts state2={countNo} state={comeon} />
           </Route>
           <div className="content">
             <div className="leftFooter mx-1 bg-dark my-3">
@@ -51,7 +74,7 @@ function App() {
                 </Route>
                 <Route path="/productsite">
                   <ContentHeader />
-                  <Content/>
+                  <Content state={setCountNo} />
                   <hr className="my-5" />
                   <Footer />
                 </Route>
