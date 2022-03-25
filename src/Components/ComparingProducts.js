@@ -1,6 +1,7 @@
 import React from "react";
 import ComparingTwoProductsImformations from "./ComparingTwoProductsImformations";
 import ProductPhoto from "./ProductPhoto";
+import {Link} from "react-router-dom";
 
 export default function ComparingProducts() {
   return (

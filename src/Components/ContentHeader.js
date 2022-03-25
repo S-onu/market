@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContentHeader() {
   return (
-    <div>
+    <div className="container">
       <h1>&#9733; Suggestions</h1>
       <div className="badges">
         <span className="badge mx-1 bg-secondary">Apple</span>

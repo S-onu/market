@@ -123,7 +123,7 @@ export default function LeftFooterComponent() {
                   aria-controls="flush-collapseOne"
                   // className="card my-1"
                 >
-                  <div className="card-body cardInLeftFooter">Gaming</div>
+                  <div className="cardInLeftFooter">Gaming</div>
                 </div>
                 <div
                   style={{
@@ -137,7 +137,7 @@ export default function LeftFooterComponent() {
                   aria-controls="flush-collapseOne"
                   // className="card my-1"
                 >
-                  <div className="card-body cardInLeftFooter">Editing</div>
+                  <div className="cardInLeftFooter">Editing</div>
                 </div>
                 <div
                   style={{
@@ -151,13 +151,12 @@ export default function LeftFooterComponent() {
                   aria-controls="flush-collapseOne"
                   // className="card my-1"
                 >
-                  <div className="card-body cardInLeftFooter">Daily use</div>
+                  <div className="cardInLeftFooter">Daily use</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
       <hr />
 
@@ -170,6 +169,11 @@ export default function LeftFooterComponent() {
         <Link to="/edit" className="btn btn-primary" type="button">
           Edit
         </Link>
+      </div>
+      <div className="d-grid my-3 gap-2">
+        <a href="#" className="btn btn-success" type="button">
+          Sell
+        </a>
       </div>
     </div>
   );

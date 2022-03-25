@@ -124,7 +124,18 @@
 }
 .cardInLeftFooter{
   background-color: #212529;
+  padding: 0.5rem 0rem 0.5rem 1rem
 }
 .cardInLeftFooter:hover{
   background-color: #393f45;
 }
+::-webkit-scrollbar{
+  width: 0.3rem;
+  background: #111b21;
+}
+::-webkit-scrollbar-thumb{
+  background: #30383c;
+  border-radius: .51rem;
+}
+/* .card-body{
+} */

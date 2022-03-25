@@ -18,7 +18,7 @@ export default function EditProducts() {
     }
   };
   const handleSubmitFormForEditBtn = () => {
-    let allInputsInTheEditProducts = document.querySelectorAll(".bgColor");
+    let allInputsInTheEditProducts = document.querySelectorAll(".bgColor1");
     let inputEditProduct = [];
     for (let i = 0; i < allInputsInTheEditProducts.length; i++) {
       inputEditProduct.push(allInputsInTheEditProducts[i].value);
@@ -45,7 +45,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="rankInputId"
               required
             />
@@ -57,7 +57,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationServer03"
               aria-describedby="validationServer03Feedback"
               required
@@ -72,7 +72,22 @@ export default function EditProducts() {
             </label>
             <input
               type="email"
-              className="form-control bgColor"
+              placeholder="URL 1"
+              className="form-control bgColor bgColor1"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <input
+              type="email"
+              placeholder="URL 2"
+              className="form-control my-2 bgColor1"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <input
+              type="email"
+              placeholder="URL 3"
+              className="form-control my-2 bgColor1"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
@@ -92,7 +107,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationServer03"
               aria-describedby="validationServer03Feedback"
               required
@@ -109,7 +124,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationCustom01"
               required
             />
@@ -121,7 +136,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationCustom02"
               required
             />
@@ -133,7 +148,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationCustom02"
               required
             />
@@ -145,7 +160,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationCustom02"
               required
             />
@@ -157,7 +172,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationCustom02"
               required
             />
@@ -169,7 +184,7 @@ export default function EditProducts() {
             </label>
             <input
               type="text"
-              className="form-control bgColor"
+              className="form-control bgColor bgColor1"
               id="validationCustom02"
               required
             />
