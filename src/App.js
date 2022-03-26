@@ -26,26 +26,25 @@ function App() {
   const handleOnCardClick1 = () => {
     setShowResults(inputEditProductObj[0]);
   };
-  let goOn = 1;
-  let comeon = 0;
-  if (goOn % 2 == 0) {
-    comeon = countNo;
-  } else {
-    comeon = 0;
-  }
-  goOn++;
 
-  // const [alert, setAlert] = useState(null);
-
-  // const showAlert = (message) => {
-  //   setAlert({
-  //     msg: message,
-  //   });
-  //   setTimeout(() => {
-  //     setAlert(null);
-  //   }, 1400);
-  // };
-
+  let myArr = [0, 0];
+  const compareTwoProducts = () => {
+    let elements = document.querySelectorAll(".compareBTN");
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].addEventListener("click", () => {
+        let num = i;
+        myArr.push(num);
+      });
+    }
+    sort();
+  };
+  const sort = () => {
+    if (myArr[myArr.length - 1] == myArr[myArr.length - 2]) {
+      myArr.pop();
+      sort();
+    }
+  };
+  
   return (
     <>
       <Router>
@@ -61,7 +60,7 @@ function App() {
             <Footer />
           </Route>
           <Route path="/compare">
-            <ComparingProducts state2={countNo} state={comeon} />
+            <ComparingProducts state={myArr} />
           </Route>
           <div className="content">
             <div className="leftFooter mx-1 bg-dark my-3">
@@ -74,7 +73,7 @@ function App() {
                 </Route>
                 <Route path="/productsite">
                   <ContentHeader />
-                  <Content state={setCountNo} />
+                  <Content runFunc={compareTwoProducts} state={setCountNo} />
                   <hr className="my-5" />
                   <Footer />
                 </Route>

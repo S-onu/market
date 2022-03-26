@@ -21,18 +21,18 @@ export default function ComparingProducts(props) {
     <div className="container comparingTwoProducts">
       <div className="inLeft bg-dark my-3">
         <ProductPhoto
-          imageUrl1={inputEditProductObj[0][props.state][2]}
-          imageUrl2={inputEditProductObj[0][props.state][3]}
-          imageUrl3={inputEditProductObj[0][props.state][4]}
+          imageUrl1={inputEditProductObj[0][props.state[props.state.length-2]][2]}
+          imageUrl2={inputEditProductObj[0][props.state[props.state.length-2]][3]}
+          imageUrl3={inputEditProductObj[0][props.state[props.state.length-2]][4]}
           // className="d-block w-100"
           width="100"
         />
       </div>
       <div className="inRight bg-dark my-3">
         <ProductPhoto
-          imageUrl1={inputEditProductObj[0][props.state2][2]}
-          imageUrl2={inputEditProductObj[0][props.state2][3]}
-          imageUrl3={inputEditProductObj[0][props.state2][4]}
+          imageUrl1={inputEditProductObj[0][props.state[props.state.length-1]][2]}
+          imageUrl2={inputEditProductObj[0][props.state[props.state.length-1]][3]}
+          imageUrl3={inputEditProductObj[0][props.state[props.state.length-1]][4]}
           // className="d-block w-100"
           width="100"
         />
@@ -40,10 +40,10 @@ export default function ComparingProducts(props) {
     </div>
     <div className="container comparingProductDetails my-4">
       <div className="leftProductInfo text-light bg-dark">
-        <ComparingTwoProductsImformations state={props.state}/>
+        <ComparingTwoProductsImformations state={props.state[props.state.length-2]}/>
       </div>
       <div className="rightProductInfo text-light bg-dark">
-        <ComparingTwoProductsImformations  state={props.state2}/>
+        <ComparingTwoProductsImformations  state={props.state[props.state.length-1]}/>
       </div>
     </div>
     </>

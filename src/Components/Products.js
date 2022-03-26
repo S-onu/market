@@ -9,11 +9,16 @@ export default function Products(props) {
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
+  // let id = document.getElementById(`${props.NoOfProducts}`)
+  // id.addEventListener("click", ()=>{
+  //   console.log("cliked on ", props.NoOfProducts)
+  // })
   return (
     <div className="card bg-dark text-light my-2">
       <div className="card-body">
         <h4 className="card-title">
-          {inputEditProductObj[0][props.NoOfProducts][0]}. {inputEditProductObj[0][props.NoOfProducts][1]}
+          {inputEditProductObj[0][props.NoOfProducts][0]}.{" "}
+          {inputEditProductObj[0][props.NoOfProducts][1]}
         </h4>
         <ProductPhoto
           imageUrl1={inputEditProductObj[0][props.NoOfProducts][2]}
@@ -22,11 +27,16 @@ export default function Products(props) {
           width="50"
         />
 
-        <h4 className="text-light">₹ {inputEditProductObj[0][props.NoOfProducts][5]}</h4>
+        <h4 className="text-light">
+          ₹ {inputEditProductObj[0][props.NoOfProducts][5]}
+        </h4>
 
         <div
-          className="accordion my-3 accordion-flush"
+          className="accordion myAccordion my-3 accordion-flush"
           id="accordionFlushExample"
+          onClick={() => {
+            props.runFunc();
+          }}
         >
           <div className="accordion-item bg-dark">
             <h2 className="accordion-header" id="flush-headingOne">
@@ -113,15 +123,23 @@ export default function Products(props) {
                       <div>{inputEditProductObj[0][props.NoOfProducts][7]}</div>
                       <div>{inputEditProductObj[0][props.NoOfProducts][8]}</div>
                       <div>{inputEditProductObj[0][props.NoOfProducts][9]}</div>
-                      <div>{inputEditProductObj[0][props.NoOfProducts][10]}</div>
-                      <div>{inputEditProductObj[0][props.NoOfProducts][11]}</div>
+                      <div>
+                        {inputEditProductObj[0][props.NoOfProducts][10]}
+                      </div>
+                      <div>
+                        {inputEditProductObj[0][props.NoOfProducts][11]}
+                      </div>
                     </div>
                   </div>
                   <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button
-                      className="btn btn-outline-light me-md-2"
+                      className="btn compareBTN btn-outline-light me-md-2"
                       type="button"
-                      onClick={()=>{props.state(props.NoOfProducts)}}
+                      id={`${props.NoOfProducts}`}
+                      // onClick={() => {
+                      //   // props.state(props.state2);
+                      //   props.runFunc();
+                      // }}
                     >
                       Add to compare
                     </button>
