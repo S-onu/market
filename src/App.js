@@ -26,7 +26,7 @@ function App() {
     setShowResults(inputEditProductObj[0]);
   };
 
-  let myArr = [0, 0];
+  let myArr = [0, 1];
   const compareTwoProducts = () => {
     let elements = document.querySelectorAll(".compareBTN");
     for (let i = 0; i < elements.length; i++) {

@@ -49,9 +49,10 @@ export default function Products(props) {
             </h2>
             <div
               id="flush-collapseOne"
-              className="accordion-collapse collapse"
+              className="accordion-collapse py-2 collapse"
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
+              style={{backgroundColor:"#30363c"}}
             >
               <ul
                 className="nav nav-pills m-3 mb-3"
