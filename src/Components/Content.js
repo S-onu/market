@@ -15,10 +15,9 @@ export default function Content(props) {
     <>
       <div className="container">
         <div id="contentId" className="my-3">
-          {/* <Products /> */}
-          {inputEditProductObj[0].map((item) => {
+          {inputEditProductObj[0].map(() => {
             index++;
-            return <Products state2={item} runFunc={props.runFunc} state={props.state} NoOfProducts={index} />;
+            return <Products runFunc={props.runFunc} NoOfProducts={index} />;
           })}
         </div>
       </div>

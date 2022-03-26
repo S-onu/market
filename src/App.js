@@ -22,7 +22,6 @@ function App() {
     inputEditProductObj = JSON.parse(inputValues);
   }
   const [showResults, setShowResults] = useState(inputEditProductObj[0]);
-  const [countNo, setCountNo] = useState(0);
   const handleOnCardClick1 = () => {
     setShowResults(inputEditProductObj[0]);
   };
@@ -73,7 +72,7 @@ function App() {
                 </Route>
                 <Route path="/productsite">
                   <ContentHeader />
-                  <Content runFunc={compareTwoProducts} state={setCountNo} />
+                  <Content runFunc={compareTwoProducts} />
                   <hr className="my-5" />
                   <Footer />
                 </Route>

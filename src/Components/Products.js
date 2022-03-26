@@ -9,10 +9,6 @@ export default function Products(props) {
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
-  // let id = document.getElementById(`${props.NoOfProducts}`)
-  // id.addEventListener("click", ()=>{
-  //   console.log("cliked on ", props.NoOfProducts)
-  // })
   return (
     <div className="card bg-dark text-light my-2">
       <div className="card-body">
@@ -135,11 +131,6 @@ export default function Products(props) {
                     <button
                       className="btn compareBTN btn-outline-light me-md-2"
                       type="button"
-                      id={`${props.NoOfProducts}`}
-                      // onClick={() => {
-                      //   // props.state(props.state2);
-                      //   props.runFunc();
-                      // }}
                     >
                       Add to compare
                     </button>
