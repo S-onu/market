@@ -38,6 +38,7 @@ function App() {
       "8GB unified memory Configurable to: 16GB",
       "256GB SSD Configurable to:512GB, 1TB or 2TB",
       "720p FaceTime HD camera",
+      "https://youtube.com/embed/koPg_DZUfOc"
     ],
     [
       "2",
@@ -52,6 +53,7 @@ function App() {
       "Up to 64GB unified memory",
       "8TB Maximum configurable storage",
       "1080p FaceTime HD camera",
+      "https://youtube.com/embed/ctWDAdQ81B8"
     ],
     [
       "3",
@@ -66,6 +68,7 @@ function App() {
       "Up to 64GB unified memory",
       "8TB Maximum configurable storage",
       "1080p FaceTime HD camera",
+      "https://youtube.com/embed/zTr3FxrAPgY"
     ],
     [
       "4",
@@ -80,6 +83,7 @@ function App() {
       "16 GB LPDDR4-3200 SDRAM (onboard)",
       "1 TB PCIe® NVMe™ TLC M.2 SSD",
       "HP True Vision 720p HD IR camera",
+      "https://youtube.com/embed/kYLowCC31Ts"
     ],
     [
       "5",
@@ -94,6 +98,7 @@ function App() {
       "16GB DDR4 on board, Max Capacity : 48GB",
       "1TB M.2 NVMe™ PCIe® 3.0 SSD",
       "FHD 1080P@60FPS external camera",
+      "https://youtube.com/embed/KuoHW5EiJdQ"
     ],
     [
       "6",
@@ -108,6 +113,7 @@ function App() {
       "Up to 16 GB memory.",
       "Up to 512 GB SSD storage.",
       "-",
+      "https://youtube.com/embed/SRfrFb_cF-A"
     ],
     [
       "7",
@@ -122,6 +128,7 @@ function App() {
       "16 GB LPDDR4X",
       "512 GB SSD",
       "-",
+      "https://youtube.com/embed/U3hYVBkZYCM"
     ],
     [
       "8",
@@ -136,6 +143,7 @@ function App() {
       "16 GB DDR4-3200 MHz RAM (onboard)",
       "SSD 512GB",
       "HP Wide Vision 720p HD camera",
+      "https://youtube.com/embed/wei4UMSpNRM"
     ],
     [
       "9",
@@ -150,6 +158,7 @@ function App() {
       "8GB RAM",
       "512GB SSD",
       "-",
+      "https://youtube.com/embed/9vtarrOecew"
     ],
     [
       "10",
@@ -164,6 +173,7 @@ function App() {
       "Up to 16GB LPDDR4x",
       "Up to 1TB PCIe SSD",
       "Hybrid infrared (IR) / 720p HD with webcam privacy cover",
+      "https://youtube.com/embed/bGmrlSptO_s"
     ],
   ];
   localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
