@@ -22,13 +22,13 @@ export default function ComparingProducts(props) {
         <div className="inLeft bg-dark my-3">
           <ProductPhoto
             imageUrl1={
-              inputEditProductObj[0][props.state[props.state.length - 2]][2]
+              inputEditProductObj[props.state2][props.state[props.state.length - 2]][2]
             }
             imageUrl2={
-              inputEditProductObj[0][props.state[props.state.length - 2]][3]
+              inputEditProductObj[props.state2][props.state[props.state.length - 2]][3]
             }
             imageUrl3={
-              inputEditProductObj[0][props.state[props.state.length - 2]][4]
+              inputEditProductObj[props.state2][props.state[props.state.length - 2]][4]
             }
             // className="d-block w-100"
             width="50"
@@ -37,13 +37,13 @@ export default function ComparingProducts(props) {
         <div className="inRight bg-dark my-3">
           <ProductPhoto
             imageUrl1={
-              inputEditProductObj[0][props.state[props.state.length - 1]][2]
+              inputEditProductObj[props.state2][props.state[props.state.length - 1]][2]
             }
             imageUrl2={
-              inputEditProductObj[0][props.state[props.state.length - 1]][3]
+              inputEditProductObj[props.state2][props.state[props.state.length - 1]][3]
             }
             imageUrl3={
-              inputEditProductObj[0][props.state[props.state.length - 1]][4]
+              inputEditProductObj[props.state2][props.state[props.state.length - 1]][4]
             }
             // className="d-block w-100"
             width="50"
@@ -52,12 +52,12 @@ export default function ComparingProducts(props) {
       </div>
       <div className="container comparingProductDetails my-4">
         <div className="leftProductInfo text-light bg-dark">
-          <ComparingTwoProductsImformations
+          <ComparingTwoProductsImformations state2={props.state2}
             state={props.state[props.state.length - 2]}
           />
         </div>
         <div className="rightProductInfo text-light bg-dark">
-          <ComparingTwoProductsImformations
+          <ComparingTwoProductsImformations state2={props.state2}
             state={props.state[props.state.length - 1]}
           />
         </div>
@@ -67,7 +67,7 @@ export default function ComparingProducts(props) {
           <iframe
             style={{ width: "100%", height: "100%" }}
             src={`${
-              inputEditProductObj[0][props.state[props.state.length - 2]][12]
+              inputEditProductObj[props.state2][props.state[props.state.length - 2]][12]
             }`}
             title="YouTube video player"
             frameborder="0"
@@ -79,7 +79,7 @@ export default function ComparingProducts(props) {
           <iframe
             style={{ width: "100%", height: "100%" }}
             src={`${
-              inputEditProductObj[0][props.state[props.state.length - 1]][12]
+              inputEditProductObj[props.state2][props.state[props.state.length - 1]][12]
             }`}
             title="YouTube video player"
             frameborder="0"

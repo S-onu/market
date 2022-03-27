@@ -13,18 +13,18 @@ export default function Products(props) {
     <div className="card bg-dark text-light my-2">
       <div className="card-body">
         <h4 className="card-title">
-          {inputEditProductObj[0][props.NoOfProducts][0]}.{" "}
-          {inputEditProductObj[0][props.NoOfProducts][1]}
+          {inputEditProductObj[props.state0][props.NoOfProducts][0]}.{" "}
+          {inputEditProductObj[props.state0][props.NoOfProducts][1]}
         </h4>
         <ProductPhoto
-          imageUrl1={inputEditProductObj[0][props.NoOfProducts][2]}
-          imageUrl2={inputEditProductObj[0][props.NoOfProducts][3]}
-          imageUrl3={inputEditProductObj[0][props.NoOfProducts][4]}
+          imageUrl1={inputEditProductObj[props.state0][props.NoOfProducts][2]}
+          imageUrl2={inputEditProductObj[props.state0][props.NoOfProducts][3]}
+          imageUrl3={inputEditProductObj[props.state0][props.NoOfProducts][4]}
           width="50"
         />
 
         <h4 className="text-light">
-          ₹ {inputEditProductObj[0][props.NoOfProducts][5]}
+          ₹ {inputEditProductObj[props.state0][props.NoOfProducts][5]}
         </h4>
 
         <div
@@ -115,16 +115,16 @@ export default function Products(props) {
                       <div> : </div>
                     </div>
                     <div className="col3">
-                      <div>{inputEditProductObj[0][props.NoOfProducts][1]}</div>
-                      <div>{inputEditProductObj[0][props.NoOfProducts][6]}</div>
-                      <div>{inputEditProductObj[0][props.NoOfProducts][7]}</div>
-                      <div>{inputEditProductObj[0][props.NoOfProducts][8]}</div>
-                      <div>{inputEditProductObj[0][props.NoOfProducts][9]}</div>
+                      <div>{inputEditProductObj[props.state0][props.NoOfProducts][1]}</div>
+                      <div>{inputEditProductObj[props.state0][props.NoOfProducts][6]}</div>
+                      <div>{inputEditProductObj[props.state0][props.NoOfProducts][7]}</div>
+                      <div>{inputEditProductObj[props.state0][props.NoOfProducts][8]}</div>
+                      <div>{inputEditProductObj[props.state0][props.NoOfProducts][9]}</div>
                       <div>
-                        {inputEditProductObj[0][props.NoOfProducts][10]}
+                        {inputEditProductObj[props.state0][props.NoOfProducts][10]}
                       </div>
                       <div>
-                        {inputEditProductObj[0][props.NoOfProducts][11]}
+                        {inputEditProductObj[props.state0][props.NoOfProducts][11]}
                       </div>
                     </div>
                   </div>

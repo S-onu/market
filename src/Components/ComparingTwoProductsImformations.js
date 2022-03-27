@@ -15,7 +15,7 @@ export default function ComparingTwoProductsImformations(props) {
       <div className="container my-3 specs2">
           <h4>Price</h4>
           <h4> : </h4>
-          <h4>₹ {inputEditProductObj[0][props.state][5]}</h4>
+          <h4>₹ {inputEditProductObj[props.state2][props.state][5]}</h4>
       </div><hr />
       <div className="container"><h6>Specifications :-</h6></div>
     <div className="container p-3 specs2">
@@ -26,7 +26,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][1]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][1]}</div>
       </div>
       <div className="col1">
         <div>Display</div>
@@ -35,7 +35,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][6]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][6]}</div>
       </div>
       <div className="col1">
         <div>Chip</div>
@@ -44,7 +44,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][7]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][7]}</div>
       </div>
       <div className="col1">
         <div>Battery and Power</div>
@@ -53,7 +53,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][8]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][8]}</div>
       </div>
       <div className="col1">
         <div>Memory</div>
@@ -62,7 +62,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][9]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][9]}</div>
       </div>
       <div className="col1">
         <div>Storage</div>
@@ -71,7 +71,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][10]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][10]}</div>
       </div>
       <div className="col1">
         <div>Camera</div>
@@ -80,7 +80,7 @@ export default function ComparingTwoProductsImformations(props) {
         <div> : </div>
       </div>
       <div className="col3">
-        <div>{inputEditProductObj[0][props.state][11]}</div>
+        <div>{inputEditProductObj[props.state2][props.state][11]}</div>
       </div>
     </div>
     </>

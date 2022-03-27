@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function ContentHeader() {
+export default function ContentHeader(props) {
   return (
     <div className="container">
       <h1>&#9733; Suggestions</h1>
       <div className="badges">
-        <span className="badge mx-1 bg-secondary">Apple</span>
-        <span className="badge mx-1 bg-secondary">HP</span>
+        <span onClick={()=>{props.goToProductSite(0)}} className="badge mx-1 bg-secondary">Laptop</span>
+        <span onClick={()=>{props.goToProductSite(1)}} className="badge mx-1 bg-secondary">Mobile</span>
         <span className="badge mx-1 bg-secondary">Lenovo</span>
         <span className="badge mx-1 bg-secondary">Dell</span>
         <span className="badge mx-1 bg-secondary">Acer</span>
