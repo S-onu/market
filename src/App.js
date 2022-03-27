@@ -26,24 +26,21 @@ function App() {
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
-  inputEditProductObj[0] = Source.articles1
-  inputEditProductObj[1] = Source.articles2
-  inputEditProductObj[2] = Source.articles3
+  inputEditProductObj[0] = Source.articles1;
+  inputEditProductObj[1] = Source.articles2;
+  inputEditProductObj[2] = Source.articles3;
   localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
 
   const [showResults, setShowResults] = useState(0);
-  // const handleOnCardClick1 = () => {
-    // setShowResults(inputEditProductObj[0]);
-  // };
 
   let myArr = [0, 1];
-  let myArr2 = [0,1];
+  let myArr2 = [0, 1];
   const compareTwoProducts = () => {
     let elements = document.querySelectorAll(".compareBTN");
     for (let i = 0; i < elements.length; i++) {
       elements[i].addEventListener("click", () => {
         let num = i;
-        myArr=[num];
+        myArr = [num];
       });
     }
     sort();
@@ -53,7 +50,7 @@ function App() {
       myArr.pop();
       sort();
     }
-    myArr2.push(myArr[0])
+    myArr2.push(myArr[0]);
   };
 
   return (
@@ -73,15 +70,15 @@ function App() {
           <Route path="/compare">
             <ComparingProducts state2={showResults} state={myArr2} />
           </Route>
+          <Route path="/edit">
+            <EditProducts />
+          </Route>
           <div className="content">
-            <div className="leftFooter mx-1 bg-dark my-3">
+            <div className="leftFooter p-1">
               <LeftFooterComponent />
             </div>
             <div className="my-3">
               <Switch>
-                <Route path="/edit">
-                  <EditProducts />
-                </Route>
                 <Route path="/productsite">
                   <ContentHeader goToProductSite={setShowResults} />
                   <Content state={showResults} runFunc={compareTwoProducts} />
