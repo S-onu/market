@@ -83,10 +83,6 @@ export default function ComparingTwoProductsImformations(props) {
         <div>{inputEditProductObj[0][props.state][11]}</div>
       </div>
     </div>
-    <div className="container my-3">
-    <a href="#" className="btn btn-outline-success">
-          Buy now
-        </a></div>
     </>
   );
 }

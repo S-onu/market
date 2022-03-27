@@ -65,8 +65,10 @@ export default function ComparingProducts(props) {
       <div className="container comparingProductDetails my-4">
         <div className="leftProductInfo2 text-light bg-dark">
           <iframe
-            style={{width:"100%", height:"100%"}}
-            src={`${inputEditProductObj[0][props.state[props.state.length - 2]][12]}`}
+            style={{ width: "100%", height: "100%" }}
+            src={`${
+              inputEditProductObj[0][props.state[props.state.length - 2]][12]
+            }`}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -75,13 +77,31 @@ export default function ComparingProducts(props) {
         </div>
         <div className="rightProductInfo2 text-light bg-dark">
           <iframe
-            style={{width:"100%", height:"100%"}}
-            src={`${inputEditProductObj[0][props.state[props.state.length - 1]][12]}`}
+            style={{ width: "100%", height: "100%" }}
+            src={`${
+              inputEditProductObj[0][props.state[props.state.length - 1]][12]
+            }`}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+        </div>
+      </div>
+      <div className="container comparingProductDetails my-4">
+        <div className="leftProductInfo text-light bg-dark">
+          <div className="container my-3">
+            <a href="#" className="btn btn-success">
+              Buy now
+            </a>
+          </div>
+        </div>
+        <div className="rightProductInfo text-light bg-dark">
+          <div className="container my-3">
+            <a href="#" className="btn btn-success">
+              Buy now
+            </a>
+          </div>
         </div>
       </div>
     </>
