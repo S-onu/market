@@ -174,12 +174,13 @@ function App() {
   };
 
   let myArr = [0, 1];
+  let myArr2 = [0,1];
   const compareTwoProducts = () => {
     let elements = document.querySelectorAll(".compareBTN");
     for (let i = 0; i < elements.length; i++) {
       elements[i].addEventListener("click", () => {
         let num = i;
-        myArr.push(num);
+        myArr=[num];
       });
     }
     sort();
@@ -189,6 +190,7 @@ function App() {
       myArr.pop();
       sort();
     }
+    myArr2.push(myArr[0])
   };
 
   return (
@@ -206,7 +208,7 @@ function App() {
             <Footer />
           </Route>
           <Route path="/compare">
-            <ComparingProducts state={myArr} />
+            <ComparingProducts state={myArr2} />
           </Route>
           <div className="content">
             <div className="leftFooter mx-1 bg-dark my-3">

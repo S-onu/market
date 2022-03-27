@@ -25,7 +25,7 @@ export default function ComparingProducts(props) {
           imageUrl2={inputEditProductObj[0][props.state[props.state.length-2]][3]}
           imageUrl3={inputEditProductObj[0][props.state[props.state.length-2]][4]}
           // className="d-block w-100"
-          width="100"
+          width="50"
         />
       </div>
       <div className="inRight bg-dark my-3">
@@ -34,7 +34,7 @@ export default function ComparingProducts(props) {
           imageUrl2={inputEditProductObj[0][props.state[props.state.length-1]][3]}
           imageUrl3={inputEditProductObj[0][props.state[props.state.length-1]][4]}
           // className="d-block w-100"
-          width="100"
+          width="50"
         />
       </div>
     </div>
