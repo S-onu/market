@@ -26,8 +26,6 @@ export default function EditProducts() {
     let inputEditProduct = [];
     let laptop = []
     let mobile = []
-    // let typeinputEditProduct = [];
-    // inputEditProductObj = [laptop, mobile]
     for (let i = 0; i < allInputsInTheEditProducts.length; i++) {
       inputEditProduct.push(allInputsInTheEditProducts[i].value);
     }
@@ -38,9 +36,6 @@ export default function EditProducts() {
     } else {
       inputEditProductObj = JSON.parse(inputValues);
     }
-    // typeinputEditProduct.push(inputEditProduct);
-    // inputEditProductObj.push(typeinputEditProduct);
-    // inputEditProductObj=[typeinputEditProduct];
     inputEditProductObj[0].push(inputEditProduct)
     localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
   };
