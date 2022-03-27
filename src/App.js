@@ -18,15 +18,17 @@ function App() {
   localStorage.clear();
   let laptop = [];
   let mobile = [];
+  let tab = [];
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj;
   if (inputValues == null) {
-    inputEditProductObj = [laptop, mobile];
+    inputEditProductObj = [laptop, mobile, tab];
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
   inputEditProductObj[0] = Source.articles1
   inputEditProductObj[1] = Source.articles2
+  inputEditProductObj[2] = Source.articles3
   localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
 
   const [showResults, setShowResults] = useState(0);

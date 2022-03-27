@@ -17,9 +17,9 @@ export default function HomePage(props) {
       <div className="container py-2 my-4 bg-dark">
         <h4 className="mx-1">Upto 55% off</h4>
         <div className="row1" style={{ display: "flex", overflowX: "scroll" }}>
-          <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC14bUcYj0MG4evp8IiAaBm2ytz2XDYaA_Bw&usqp=CAU" goToProductSite={props.goToProductSite} i={0} />
+          <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEXoeTiQRZOyjQdni3zmUjvIsRnxEXUp-1jQ&usqp=CAU" goToProductSite={props.goToProductSite} i={0} />
           <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_Nd0xiyrN9Z48TMmglVBYhRouqzzVp9SJQ&usqp=CAU" goToProductSite={props.goToProductSite} i={1}/>
-          <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC14bUcYj0MG4evp8IiAaBm2ytz2XDYaA_Bw&usqp=CAU" />
+          <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aBCkHLJXOex8l5I0nZM7qtLYRVAqONgbPQ&usqp=CAU" goToProductSite={props.goToProductSite} i={2}/>
           <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_Nd0xiyrN9Z48TMmglVBYhRouqzzVp9SJQ&usqp=CAU" />
           <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC14bUcYj0MG4evp8IiAaBm2ytz2XDYaA_Bw&usqp=CAU" />
           <CardsInRows imageUrlForCard="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_Nd0xiyrN9Z48TMmglVBYhRouqzzVp9SJQ&usqp=CAU" />

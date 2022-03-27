@@ -227,5 +227,37 @@
             "12 MP + 12 MP + 12 MP",
             "https://youtube.com/embed/iLLi02P1FN4"
         ]
+    ],
+    "articles3" : [
+        [
+            "1",
+            "IPAD PRO 12.9‑INCH",
+            "https://m.media-amazon.com/images/I/81sxRBhe2sS._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71Yk1UUPCaS._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/81vic-0KtdS._SX679_.jpg",
+            "1,13,900.00",
+            "Brilliant 32.77 cm (12.9-inch) Liquid Retina XDR display",
+            "Apple M1 chip",
+            "NA",
+            "6 GB",
+            "128 GB",
+            "12MP Wide camera, 10MP Ultra Wide camera",
+            "https://youtube.com/embed/eY9dXcjkVx8"
+        ],
+        [
+            "2",
+            "IPAD AIR",
+            "https://m.media-amazon.com/images/I/71qzgEZgSIL._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71PLePdybJL._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71rpCkLdVLL._SX679_.jpg",
+            "66,900.00",
+            "Stunning 27.69 cm (10.9-inch) Liquid Retina display",
+            "A12 Bionic|octa-core|NA",
+            "NA",
+            "NA",
+            "64 GB",
+            "12MP back camera, 7MP FaceTime HD front camera",
+            "https://youtube.com/embed/pwHNannxolo"
+        ]
     ]
 }
