@@ -6,6 +6,17 @@ import { Card } from "react-bootstrap";
 export default function LeftFooterComponent(props) {
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj = JSON.parse(inputValues);
+  let gaming = 3
+  let editing = 4
+  let random = 0
+  if(props.showResults2 == 0 || props.showResults2 == 3 || props.showResults2 == 4){
+    gaming = 3;
+    editing = 4;
+    random = 0;
+  } 
+  else if(props.showResults2 == 1){
+    gaming = 5;
+  }
   return (
     <div
       style={{
@@ -144,17 +155,30 @@ export default function LeftFooterComponent(props) {
             Buying for
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            {/* <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-            </li> */}
             {inputEditProductObj[props.showResults2][0][
               inputEditProductObj[props.showResults2][0].length - 1
             ].map((item) => {
+              const checking = () => {
+                if (item == "Gaming") {
+                  props.goToProductSite(gaming);
+                } else if (item == "Editing") {
+                  props.goToProductSite(editing);
+                } else if (item == "Online classes/meetings") {
+                  props.goToProductSite(5);
+                } else if (item == "Daily use") {
+                  props.goToProductSite(6);
+                } else if (item == "Random") {
+                  props.goToProductSite(random);
+                }
+                
+              };
               return (
                 <li>
-                  <span style={{cursor:"pointer"}} className="dropdown-item">
+                  <span
+                    onClick={checking}
+                    style={{ cursor: "pointer" }}
+                    className="dropdown-item"
+                  >
                     {item}
                   </span>
                 </li>

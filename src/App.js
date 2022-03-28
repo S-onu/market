@@ -30,7 +30,9 @@ function App() {
   inputEditProductObj[0] = Source.articles0;
   inputEditProductObj[1] = Source.articles1;
   inputEditProductObj[2] = Source.articles2;
-  inputEditProductObj[3] = Source.articles3_GamingLaptop;
+  inputEditProductObj[3] = Source.articles3_gamingLaptop;
+  inputEditProductObj[4] = Source.articles4_editingLaptop;
+  inputEditProductObj[5] = Source.articles5_gamingMobile;
   localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
 
   const [showResults, setShowResults] = useState(0);
@@ -77,7 +79,7 @@ function App() {
           </Route>
           <div className="content">
             <div className="leftFooter p-1">
-              <LeftFooterComponent showResults2={showResults} />
+              <LeftFooterComponent goToProductSite={setShowResults} showResults2={showResults} />
             </div>
             <div className="my-3">
               <Switch>

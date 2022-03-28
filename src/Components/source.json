@@ -14,7 +14,7 @@
             "256GB SSD Configurable to:512GB, 1TB or 2TB",
             "720p FaceTime HD camera",
             "https://youtube.com/embed/koPg_DZUfOc",
-            ["Gaming", "Editing", "Online classes/meetings", "Daily use"]
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
             "2",
@@ -167,7 +167,7 @@
             "512 GB",
             "Pro 12MP camera system: Telephoto, Wide and Ultra Wide cameras",
             "https://youtube.com/embed/bz0pUVHI5E0",
-            ["Gaming", "Editing", "Online classes/meetings", "Daily use"]
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
             "2",
@@ -245,7 +245,7 @@
             "128 GB",
             "12MP Wide camera, 10MP Ultra Wide camera",
             "https://youtube.com/embed/eY9dXcjkVx8",
-            ["Gaming", "Editing", "Online classes/meetings", "Daily use"]
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
             "2",
@@ -263,9 +263,9 @@
             "https://youtube.com/embed/pwHNannxolo"
         ]
     ],
-    "articles3_GamingLaptop":[
+    "articles3_gamingLaptop":[
         [
-            "5",
+            "1",
             "ASUS ROG ZEPHYRUS G15",
             "https://m.media-amazon.com/images/I/41JNxUy8EYL.jpg",
             "https://m.media-amazon.com/images/I/41n2mFUVCQL.jpg",
@@ -277,7 +277,57 @@
             "16GB DDR4 on board, Max Capacity : 48GB",
             "1TB M.2 NVMe™ PCIe® 3.0 SSD",
             "FHD 1080P@60FPS external camera",
+            "https://youtube.com/embed/KuoHW5EiJdQ",
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
+        ],
+        [
+            "2",
+            "RAZER BLADE 17",
+            "https://m.media-amazon.com/images/I/61wi86i8CZL._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71E-4zAWmQS._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71Rkof0o+VS._SX679_.jpg",
+            "2,82,999.00",
+            "17.3-inches, IPS, 2560 x 1440 resolution @ 165Hz ",
+            "Intel Core i7-10875H ",
+            "70.5 WHr, 230W",
+            "16GB DDR4-2933",
+            "512GB PCIe-NVMe SSD",
+            "720p resolution",
             "https://youtube.com/embed/KuoHW5EiJdQ"
+        ]
+    ],
+    "articles4_editingLaptop": [
+        [
+            "1",
+            "Dell XPS 15 OLED",
+            "https://m.media-amazon.com/images/I/61aj6AxT4-L._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71zuTiRpx0L._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/71X5A5bxNSL._SX679_.jpg",
+            "69,427.00",
+            "Display:15.6-inch UHD",
+            "11th Generation Intel Core i7-11800H",
+            "86 Whr",
+            "16GB DDR4-3200MHz",
+            "512GB M.2 PCIe NVMe Solid State Drive",
+            "720p resolution",
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
+        ]
+    ],
+    "articles5_gamingMobile": [
+        [
+            "1",
+            "ONEPLUS 9 PRO",
+            "https://m.media-amazon.com/images/I/61LvUvbZGlL._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/61PoEg+jixL._SX679_.jpg",
+            "https://m.media-amazon.com/images/I/61ueR16J2KL._SX679_.jpg",
+            "64,999.00",
+            "6.7 Inches Fluid AMOLED Display",
+            "Qualcomm Snapdragon 888 Processor with Adreno 660 GPU",
+            "4500 mAh",
+            "12 GB",
+            "256 GB",
+            "Quad Rear Camera (48 MP + 50 MP + 8 MP + 2 MP) | 16 MP Front Camera",
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ]
     ]
 }
