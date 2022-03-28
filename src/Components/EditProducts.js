@@ -21,24 +21,6 @@ export default function EditProducts() {
       }
     }
   };
-  const handleSubmitFormForEditBtn = () => {
-    let allInputsInTheEditProducts = document.querySelectorAll(".bgColor");
-    let inputEditProduct = [];
-    let laptop = []
-    let mobile = []
-    for (let i = 0; i < allInputsInTheEditProducts.length; i++) {
-      inputEditProduct.push(allInputsInTheEditProducts[i].value);
-    }
-    let inputValues = localStorage.getItem("inputValues");
-    let inputEditProductObj;
-    if (inputValues == null) {
-      inputEditProductObj = [laptop, mobile];
-    } else {
-      inputEditProductObj = JSON.parse(inputValues);
-    }
-    inputEditProductObj[0].push(inputEditProduct)
-    localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
-  };
   return (
     <>
       <div onMouseMove={handleOnBlur} className="container my-3">
@@ -225,7 +207,6 @@ export default function EditProducts() {
           </Link>
           <Link
             className="btn mx-5 btn-primary"
-            onClick={handleSubmitFormForEditBtn}
             to="/productsite"
           >
             Submit form

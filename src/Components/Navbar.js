@@ -39,23 +39,17 @@ export default function Navbar() {
               </li>
             </ul>
             <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-              {/* <div className="container mx-2">
-              <button className="btn mx-1 btn-outline-primary" type="submit">
-                Login
-              </button>
-              <button className="btn btn-primary" type="submit">
-                Sign-up
-              </button>
-            </div> */}
+              <div style={{display:"flex", justifyContent:"center", alignItems:"center"}} className="container mx-2">
+                <button
+                  className="btn mx-1 btn-outline-primary"
+                  type="submit"
+                >
+                  Login
+                </button>
+                <button className="btn btn-primary" type="submit">
+                  Sign-up
+                </button>
+              </div>
             </form>
           </div>
         </div>

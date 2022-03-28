@@ -4,7 +4,7 @@ export default function ProductPhoto(props) {
   return (
     <>
       <Carousel>
-        <Carousel.Item interval={4000}>
+        <Carousel.Item interval={6000}>
           <center>
             <img
               className={`d-block w-${props.width}`}
