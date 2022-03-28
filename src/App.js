@@ -38,7 +38,7 @@ function App() {
   const [showResults, setShowResults] = useState(0);
 
   let myArr = [0, 1];
-  let myArr2 = [0, 1];
+  let myArr2 = [];
   const compareTwoProducts = () => {
     let elements = document.querySelectorAll(".compareBTN");
     for (let i = 0; i < elements.length; i++) {
@@ -79,7 +79,7 @@ function App() {
           </Route>
           <div className="content">
             <div className="leftFooter p-1">
-              <LeftFooterComponent goToProductSite={setShowResults} showResults2={showResults} />
+              <LeftFooterComponent state2={myArr2} goToProductSite={setShowResults} showResults2={showResults} />
             </div>
             <div className="my-3">
               <Switch>

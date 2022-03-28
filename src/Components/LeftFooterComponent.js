@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
 export default function LeftFooterComponent(props) {
+
+
+
+  const [noti, setNoti] = useState(0)
+  // setInterval(() => {
+  //   let comBtn = document.getElementById("comBtn")
+  //   if(props.state2.length <= 2){
+  //     comBtn.className = "btn btn-outline-info disabled"
+  //   }
+  //   else{
+  //     comBtn.className = "btn btn-outline-info"
+  //   }
+  //   setNoti(props.state2.length)
+  // }, 50);
+
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj = JSON.parse(inputValues);
   let gaming = 3
@@ -189,8 +204,8 @@ export default function LeftFooterComponent(props) {
       </div>
       <div className="mx-3" style={{ display: "flex" }}>
         <div className="d-grid gap-2">
-          <Link className="btn btn-outline-info" to="/compare" type="button">
-            Compare<span className="badge mx-3 bg-primary rounded-pill">0</span>
+          <Link id="comBtn" className="btn btn-outline-info" to="/compare" type="button">
+            Compare<span className="badge mx-3 bg-primary rounded-pill">{noti}</span>
           </Link>
         </div>
         <div className="mx-3">
