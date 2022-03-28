@@ -8,16 +8,6 @@ export default function LeftFooterComponent(props) {
 
 
   const [noti, setNoti] = useState(0)
-  // setInterval(() => {
-  //   let comBtn = document.getElementById("comBtn")
-  //   if(props.state2.length <= 2){
-  //     comBtn.className = "btn btn-outline-info disabled"
-  //   }
-  //   else{
-  //     comBtn.className = "btn btn-outline-info"
-  //   }
-  //   setNoti(props.state2.length)
-  // }, 50);
 
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj = JSON.parse(inputValues);

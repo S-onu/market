@@ -16,14 +16,10 @@ import Alerts from "./Components/Alerts";
 
 function App() {
   localStorage.clear();
-  // let laptop = [];
-  // let mobile = [];
-  // let tab = [];
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj;
   if (inputValues == null) {
     inputEditProductObj = [];
-    // inputEditProductObj = [laptop, mobile, tab];
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
