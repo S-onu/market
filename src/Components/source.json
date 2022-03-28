@@ -14,6 +14,9 @@
             "256GB SSD Configurable to:512GB, 1TB or 2TB",
             "720p FaceTime HD camera",
             "https://youtube.com/embed/koPg_DZUfOc",
+            ["India", "UK", "USA"],
+            ["Amazon", "Flipcart"],
+            ["30,000", "50,000", "80,000", "1,00,000", "1,50,000", "2,00,000", "3,00,000"],
             ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
@@ -167,6 +170,9 @@
             "512 GB",
             "Pro 12MP camera system: Telephoto, Wide and Ultra Wide cameras",
             "https://youtube.com/embed/bz0pUVHI5E0",
+            ["India", "UK", "USA"],
+            ["Amazon", "Flipcart"],
+            ["10,000","15,000","20,000","30,000", "50,000", "80,000", "1,00,000", "1,50,000", "2,00,000"],
             ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
@@ -245,6 +251,9 @@
             "128 GB",
             "12MP Wide camera, 10MP Ultra Wide camera",
             "https://youtube.com/embed/eY9dXcjkVx8",
+            ["India", "UK", "USA"],
+            ["Amazon", "Flipcart"],
+            ["30,000", "50,000", "80,000", "1,00,000", "1,50,000", "2,00,000", "3,00,000"],
             ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
@@ -278,6 +287,9 @@
             "1TB M.2 NVMe™ PCIe® 3.0 SSD",
             "FHD 1080P@60FPS external camera",
             "https://youtube.com/embed/KuoHW5EiJdQ",
+            ["India", "UK", "USA"],
+            ["Amazon", "Flipcart"],
+            ["30,000", "50,000", "80,000", "1,00,000", "1,50,000", "2,00,000", "3,00,000"],
             ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ],
         [
@@ -310,6 +322,9 @@
             "16GB DDR4-3200MHz",
             "512GB M.2 PCIe NVMe Solid State Drive",
             "720p resolution",
+            ["India", "UK", "USA"],
+            ["Amazon", "Flipcart"],
+            ["30,000", "50,000", "80,000", "1,00,000", "1,50,000", "2,00,000", "3,00,000"],
             ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ]
     ],
@@ -327,6 +342,9 @@
             "12 GB",
             "256 GB",
             "Quad Rear Camera (48 MP + 50 MP + 8 MP + 2 MP) | 16 MP Front Camera",
+            ["India", "UK", "USA"],
+            ["Amazon", "Flipcart"],
+            ["30,000", "50,000", "80,000", "1,00,000", "1,50,000", "2,00,000", "3,00,000"],
             ["Gaming", "Editing", "Online classes/meetings", "Daily use", "Random"]
         ]
     ]

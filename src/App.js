@@ -34,7 +34,7 @@ function App() {
   const [showResults, setShowResults] = useState(0);
 
   let myArr = [0, 1];
-  let myArr2 = [];
+  let myArr2 = [0,0];
   const compareTwoProducts = () => {
     let elements = document.querySelectorAll(".compareBTN");
     for (let i = 0; i < elements.length; i++) {

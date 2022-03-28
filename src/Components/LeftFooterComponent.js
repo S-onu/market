@@ -4,22 +4,22 @@ import { Accordion } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
 export default function LeftFooterComponent(props) {
-
-
-
-  const [noti, setNoti] = useState(0)
+  const [noti, setNoti] = useState(0);
 
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj = JSON.parse(inputValues);
-  let gaming = 3
-  let editing = 4
-  let random = 0
-  if(props.showResults2 == 0 || props.showResults2 == 3 || props.showResults2 == 4){
+  let gaming = 3;
+  let editing = 4;
+  let random = 0;
+  if (
+    props.showResults2 == 0 ||
+    props.showResults2 == 3 ||
+    props.showResults2 == 4
+  ) {
     gaming = 3;
     editing = 4;
     random = 0;
-  } 
-  else if(props.showResults2 == 1){
+  } else if (props.showResults2 == 1) {
     gaming = 5;
   }
   return (
@@ -44,21 +44,20 @@ export default function LeftFooterComponent(props) {
             Select your Nation
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
+            {inputEditProductObj[props.showResults2][0][
+              inputEditProductObj[props.showResults2][0].length - 4
+            ].map((item) => {
+              const selectedNationFunc = ()=>{
+                console.log("clicked")
+              }
+              return (
+                <li>
+                  <sapn onClick={selectedNationFunc} style={{cursor:"pointer"}} className="dropdown-item">
+                    {item}
+                  </sapn>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="dropdown mx-2">
@@ -73,21 +72,17 @@ export default function LeftFooterComponent(props) {
             Shop in
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
+            {inputEditProductObj[props.showResults2][0][
+              inputEditProductObj[props.showResults2][0].length - 3
+            ].map((item) => {
+              return (
+                <li>
+                  <span className="dropdown-item">
+                    {item}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="dropdown mx-2">
@@ -102,21 +97,17 @@ export default function LeftFooterComponent(props) {
             Within price range
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
+            {inputEditProductObj[props.showResults2][0][
+              inputEditProductObj[props.showResults2][0].length - 2
+            ].map((item) => {
+              return (
+                <li>
+                  <span className="dropdown-item">
+                    {item}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="dropdown mx-2">
@@ -146,7 +137,6 @@ export default function LeftFooterComponent(props) {
                 } else if (item == "Random") {
                   props.goToProductSite(random);
                 }
-                
               };
               return (
                 <li>
@@ -165,8 +155,14 @@ export default function LeftFooterComponent(props) {
       </div>
       <div className="mx-3" style={{ display: "flex" }}>
         <div className="d-grid gap-2">
-          <Link id="comBtn" className="btn btn-outline-info" to="/compare" type="button">
-            Compare<span className="badge mx-3 bg-primary rounded-pill">{noti}</span>
+          <Link
+            id="comBtn"
+            className="btn btn-outline-info"
+            to="/compare"
+            type="button"
+          >
+            Compare
+            <span className="badge mx-3 bg-primary rounded-pill">{noti}</span>
           </Link>
         </div>
         <div className="mx-3">
