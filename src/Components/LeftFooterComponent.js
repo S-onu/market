@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { Accordion } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
-export default function LeftFooterComponent() {
+export default function LeftFooterComponent(props) {
+  let inputValues = localStorage.getItem("inputValues");
+  let inputEditProductObj = JSON.parse(inputValues);
   return (
     <div
       style={{
@@ -21,7 +23,7 @@ export default function LeftFooterComponent() {
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style={{backgroundColor:"#273034"}}
+            style={{ backgroundColor: "#273034" }}
           >
             Select your Nation
           </button>
@@ -50,7 +52,7 @@ export default function LeftFooterComponent() {
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style={{backgroundColor:"#273034"}}
+            style={{ backgroundColor: "#273034" }}
           >
             Within price range
           </button>
@@ -79,7 +81,7 @@ export default function LeftFooterComponent() {
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style={{backgroundColor:"#273034"}}
+            style={{ backgroundColor: "#273034" }}
           >
             Shop in
           </button>
@@ -108,7 +110,7 @@ export default function LeftFooterComponent() {
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style={{backgroundColor:"#273034"}}
+            style={{ backgroundColor: "#273034" }}
           >
             Within price range
           </button>
@@ -137,26 +139,27 @@ export default function LeftFooterComponent() {
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            style={{backgroundColor:"#273034"}}
+            style={{ backgroundColor: "#273034" }}
           >
             Buying for
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
+            {/* <li>
               <a className="dropdown-item" href="#">
                 Action
               </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </li>
+            </li> */}
+            {inputEditProductObj[props.showResults2][0][
+              inputEditProductObj[props.showResults2][0].length - 1
+            ].map((item) => {
+              return (
+                <li>
+                  <span style={{cursor:"pointer"}} className="dropdown-item">
+                    {item}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
@@ -167,10 +170,10 @@ export default function LeftFooterComponent() {
           </Link>
         </div>
         <div className="mx-3">
-        <Link to="/edit" className="btn btn-primary" type="button">
-          Edit
-        </Link>
-      </div>
+          <Link to="/edit" className="btn btn-primary" type="button">
+            Edit
+          </Link>
+        </div>
       </div>
     </div>
   );

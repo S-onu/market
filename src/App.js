@@ -16,19 +16,21 @@ import Alerts from "./Components/Alerts";
 
 function App() {
   localStorage.clear();
-  let laptop = [];
-  let mobile = [];
-  let tab = [];
+  // let laptop = [];
+  // let mobile = [];
+  // let tab = [];
   let inputValues = localStorage.getItem("inputValues");
   let inputEditProductObj;
   if (inputValues == null) {
-    inputEditProductObj = [laptop, mobile, tab];
+    inputEditProductObj = [];
+    // inputEditProductObj = [laptop, mobile, tab];
   } else {
     inputEditProductObj = JSON.parse(inputValues);
   }
-  inputEditProductObj[0] = Source.articles1;
-  inputEditProductObj[1] = Source.articles2;
-  inputEditProductObj[2] = Source.articles3;
+  inputEditProductObj[0] = Source.articles0;
+  inputEditProductObj[1] = Source.articles1;
+  inputEditProductObj[2] = Source.articles2;
+  inputEditProductObj[3] = Source.articles3_GamingLaptop;
   localStorage.setItem("inputValues", JSON.stringify(inputEditProductObj));
 
   const [showResults, setShowResults] = useState(0);
@@ -75,7 +77,7 @@ function App() {
           </Route>
           <div className="content">
             <div className="leftFooter p-1">
-              <LeftFooterComponent />
+              <LeftFooterComponent showResults2={showResults} />
             </div>
             <div className="my-3">
               <Switch>

@@ -1,5 +1,5 @@
 {
-    "articles1": [
+    "articles0": [
         [
             "1",
             "MACBOOK AIR",
@@ -13,7 +13,8 @@
             "8GB unified memory Configurable to: 16GB",
             "256GB SSD Configurable to:512GB, 1TB or 2TB",
             "720p FaceTime HD camera",
-            "https://youtube.com/embed/koPg_DZUfOc"
+            "https://youtube.com/embed/koPg_DZUfOc",
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use"]
         ],
         [
             "2",
@@ -151,7 +152,7 @@
             "https://youtube.com/embed/bGmrlSptO_s"
         ]
     ],
-    "articles2": [
+    "articles1": [
         [
             "1",
             "Apple iPhone 13 Pro Max",
@@ -165,7 +166,8 @@
             "6 GB",
             "512 GB",
             "Pro 12MP camera system: Telephoto, Wide and Ultra Wide cameras",
-            "https://youtube.com/embed/bz0pUVHI5E0"
+            "https://youtube.com/embed/bz0pUVHI5E0",
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use"]
         ],
         [
             "2",
@@ -228,7 +230,7 @@
             "https://youtube.com/embed/iLLi02P1FN4"
         ]
     ],
-    "articles3" : [
+    "articles2": [
         [
             "1",
             "IPAD PRO 12.9‑INCH",
@@ -242,7 +244,8 @@
             "6 GB",
             "128 GB",
             "12MP Wide camera, 10MP Ultra Wide camera",
-            "https://youtube.com/embed/eY9dXcjkVx8"
+            "https://youtube.com/embed/eY9dXcjkVx8",
+            ["Gaming", "Editing", "Online classes/meetings", "Daily use"]
         ],
         [
             "2",
@@ -258,6 +261,23 @@
             "64 GB",
             "12MP back camera, 7MP FaceTime HD front camera",
             "https://youtube.com/embed/pwHNannxolo"
+        ]
+    ],
+    "articles3_GamingLaptop":[
+        [
+            "5",
+            "ASUS ROG ZEPHYRUS G15",
+            "https://m.media-amazon.com/images/I/41JNxUy8EYL.jpg",
+            "https://m.media-amazon.com/images/I/41n2mFUVCQL.jpg",
+            "https://m.media-amazon.com/images/I/31hqtNBnoQL.jpg",
+            "1,48,400.00",
+            "15.6-inch",
+            "AMD Ryzen™ 9 5900HS Mobile ",
+            "90WHrs, 4S1P, 4-cell Li-ion",
+            "16GB DDR4 on board, Max Capacity : 48GB",
+            "1TB M.2 NVMe™ PCIe® 3.0 SSD",
+            "FHD 1080P@60FPS external camera",
+            "https://youtube.com/embed/KuoHW5EiJdQ"
         ]
     ]
 }
