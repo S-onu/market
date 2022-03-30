@@ -34,23 +34,24 @@ function App() {
   const [showResults, setShowResults] = useState(0);
 
   let myArr = [0, 1];
-  let myArr2 = [0,0];
+  let myArr2 = [0, 0];
   const compareTwoProducts = () => {
-    let elements = document.querySelectorAll(".compareBTN");
+    let elements = document.querySelectorAll(".readMoreBtn");
     for (let i = 0; i < elements.length; i++) {
       elements[i].addEventListener("click", () => {
-        let num = i;
-        myArr = [num];
+        let elem = document.querySelector(".compareBTN");
+        elem.addEventListener("click", () => {
+          console.log("hiebfuebwikn");
+          let num = i;
+          myArr = [num];
+        });
       });
     }
-    sort();
   };
-  const sort = () => {
-    if (myArr[myArr.length - 1] == myArr[myArr.length - 2]) {
-      myArr.pop();
-      sort();
-    }
-    myArr2.push(myArr[0]);
+  const runFunc3 = () => {
+    setTimeout(() => {
+      myArr2.push(myArr[0]);
+    }, 600);
   };
 
   return (
@@ -75,13 +76,21 @@ function App() {
           </Route>
           <div className="content">
             <div className="leftFooter p-1">
-              <LeftFooterComponent state2={myArr2} goToProductSite={setShowResults} showResults2={showResults} />
+              <LeftFooterComponent
+                state2={myArr2}
+                goToProductSite={setShowResults}
+                showResults2={showResults}
+              />
             </div>
             <div className="my-3">
               <Switch>
                 <Route path="/productsite">
                   <ContentHeader goToProductSite={setShowResults} />
-                  <Content state={showResults} runFunc={compareTwoProducts} />
+                  <Content
+                    runFunc3={runFunc3}
+                    state={showResults}
+                    runFunc={compareTwoProducts}
+                  />
                   <hr className="my-5" />
                   <Footer />
                 </Route>

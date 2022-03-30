@@ -30,24 +30,26 @@ export default function Products(props) {
         <div
           className="accordion myAccordion my-3 accordion-flush"
           id="accordionFlushExample"
-          onClick={() => {
+          onMouseEnter={() => {
             props.runFunc();
           }}
         >
           <div className="accordion-item bg-dark">
             <h2 className="accordion-header" id="flush-headingOne">
               <button
-                className="accordion-button bg-dark text-light collapsed"
+                className="accordion-button readMoreBtn bg-dark text-light collapsed"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
+                // data-bs-toggle="collapse"
+                // data-bs-target="#flush-collapseOne"
+                // aria-expanded="false"
+                // aria-controls="flush-collapseOne"
+                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                onClick={()=>{props.runFunc2();props.runFunc()}}
               >
                 Read more
               </button>
             </h2>
-            <div
+            {/* <div
               id="flush-collapseOne"
               className="accordion-collapse py-2 collapse"
               aria-labelledby="flush-headingOne"
@@ -146,7 +148,7 @@ export default function Products(props) {
                   Coming soon
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <a href="#" className="btn btn-outline-success">
