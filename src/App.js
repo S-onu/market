@@ -41,7 +41,6 @@ function App() {
       elements[i].addEventListener("click", () => {
         let elem = document.querySelector(".compareBTN");
         elem.addEventListener("click", () => {
-          console.log("hiebfuebwikn");
           let num = i;
           myArr = [num];
         });
