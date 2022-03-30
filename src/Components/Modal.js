@@ -103,18 +103,6 @@ export default function Modal(props) {
               </div>
               <hr />
             </div>
-            {/* <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div> */}
             <div className="d-grid m-3 gap-2 d-md-flex justify-content-md-end">
               <button
                 className="btn compareBTN btn-outline-light me-md-2" data-bs-dismiss="modal"
