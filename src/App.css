@@ -136,3 +136,19 @@
 .leftProductInfo2, .rightProductInfo2{
   height: 18.5em;
 }
+#responsiveBtn{
+  display: none;
+}
+#dropDownResponsive{
+  display: flex;
+}
+@media screen and (max-width:900px) {
+  #responsiveBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #dropDownResponsive{
+    display: none;
+  }
+}
