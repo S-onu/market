@@ -88,22 +88,6 @@ export default function ComparingProducts(props) {
           ></iframe>
         </div>
       </div>
-      <div className="container comparingProductDetails my-4">
-        <div className="leftProductInfo text-light bg-dark">
-          <div className="container my-3">
-            <a href="#" className="btn btn-success">
-              Buy now
-            </a>
-          </div>
-        </div>
-        <div className="rightProductInfo text-light bg-dark">
-          <div className="container my-3">
-            <a href="#" className="btn btn-success">
-              Buy now
-            </a>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

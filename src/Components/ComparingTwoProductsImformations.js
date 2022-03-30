@@ -1,15 +1,8 @@
 import React from "react";
 
 export default function ComparingTwoProductsImformations(props) {
-  // let laptop = []
-  // let mobile = []
   let inputValues = localStorage.getItem("inputValues");
-  // let inputEditProductObj;
-  // if (inputValues == null) {
-  // inputEditProductObj = [laptop, mobile];
-  // } else {
   let inputEditProductObj = JSON.parse(inputValues);
-  // }
   return (
     <>
       <div className="container my-3 specs2">
@@ -86,6 +79,12 @@ export default function ComparingTwoProductsImformations(props) {
           <div>{inputEditProductObj[props.state2][props.state][11]}</div>
         </div>
       </div>
+
+      <div className="container my-3">
+            <a href="#" className="btn btn-success">
+              Buy now
+            </a>
+          </div>
     </>
   );
 }
