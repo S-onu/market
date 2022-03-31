@@ -8,9 +8,9 @@ export default function HomePage(props) {
     <>
       <div className="container my-3">
         <ProductPhoto
-          imageUrl1="/Images/homeScreanImage1.JPG"
-          imageUrl2="/Images/homeScreanImage2.JPG"
-          imageUrl3="/Images/homeScreanImage3.JPG"
+          imageUrl1="https://rukminim2.flixcart.com/flap/1800/1800/image/7c34b13b47223aef.jpg?q=80"
+          imageUrl2="https://rukminim2.flixcart.com/flap/1800/1800/image/7c34b13b47223aef.jpg?q=80"
+          imageUrl3="https://rukminim2.flixcart.com/flap/1800/1800/image/7c34b13b47223aef.jpg?q=80"
           width="100"
         />
       </div>

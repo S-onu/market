@@ -62,7 +62,7 @@ function App() {
           <Route path="/contactUs">
             <ContactUsPage />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/home">
             <HomePage goToProductSite={setShowResults} />
             <hr className="my-5" />
             <Footer />
