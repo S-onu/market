@@ -59,18 +59,18 @@ function App() {
         <Navbar />
         {/* <Alerts alert={alert}/> */}
         <Switch>
-          <Route path="/contactUs">
+          <Route exact path="/contactUs">
             <ContactUsPage />
           </Route>
-          <Route exact path="/home">
+          <Route exact path="/market">
             <HomePage goToProductSite={setShowResults} />
             <hr className="my-5" />
             <Footer />
           </Route>
-          <Route path="/compare">
+          <Route exact path="/compare">
             <ComparingProducts state2={showResults} state={myArr2} />
           </Route>
-          <Route path="/edit">
+          <Route exact path="/edit">
             <EditProducts />
           </Route>
           <div className="content">
@@ -83,7 +83,7 @@ function App() {
             </div>
             <div className="my-3">
               <Switch>
-                <Route path="/productsite">
+                <Route exact path="/productsite">
                   <ContentHeader goToProductSite={setShowResults} />
                   <Content
                     runFunc3={runFunc3}

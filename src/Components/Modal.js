@@ -6,31 +6,31 @@ export default function Modal(props) {
   inputEditProductObj = JSON.parse(inputValues);
   return (
     <>
-      {/* <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button> */}
 
       <div
-        class="modal fade"
+        className="modal fade"
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content bg-dark">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
+        <div className="modal-dialog modal-dialog-scrollable">
+          <div className="modal-content bg-dark">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
                 Specifications
               </h5>
               <button
                 type="button"
-                class="btn-close bg-light"
+                className="btn-close bg-light"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body bg-dark">
+            <div className="modal-body bg-dark">
               <div className="container my-3 specs">
                 <h4>Price</h4>
                 <h4> : </h4>
